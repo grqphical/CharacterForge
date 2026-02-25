@@ -145,7 +145,7 @@
     "hasFluffImages": true
   },
   {
-    "name": "Aasimar",
+    "name": "Aasimar (Fallen)",
     "source": "DMG",
     "page": 286,
     "size": [
@@ -156,6 +156,9 @@
       {
         "wis": 1,
         "cha": 2
+      },
+      {
+        "str": 1
       }
     ],
     "age": {
@@ -245,40 +248,38 @@
           "You can speak, read, and write Common and Celestial."
         ],
         "type": "entries"
+      },
+      {
+        "name": "Necrotic Shroud",
+        "entries": [
+          "Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant you transform, other creatures within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition frightened} of you until the end of your next turn.",
+          "Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra necrotic damage equals your level.",
+          "Once you use this trait, you can't use it again until you finish a long rest."
+        ],
+        "type": "entries"
       }
     ]
   },
   {
-    "name": "Aasimar",
-    "source": "VGM",
-    "page": 104,
-    "otherSources": [
-      {
-        "source": "EGW",
-        "page": 166
-      }
-    ],
-    "reprintedAs": [
-      "Aasimar|MPMM"
-    ],
+    "name": "Aasimar (Protector)",
+    "source": "DMG",
+    "page": 286,
     "size": [
       "M"
     ],
     "speed": 30,
     "ability": [
       {
+        "wis": 1,
         "cha": 2
+      },
+      {
+        "wis": 1
       }
     ],
-    "heightAndWeight": {
-      "baseHeight": 56,
-      "heightMod": "2d10",
-      "baseWeight": 110,
-      "weightMod": "2d4"
-    },
     "age": {
       "mature": 20,
-      "max": 160
+      "max": 100
     },
     "darkvision": 60,
     "languageProficiencies": [
@@ -297,6 +298,22 @@
     },
     "additionalSpells": [
       {
+        "innate": {
+          "3": {
+            "daily": {
+              "1": [
+                "lesser restoration"
+              ]
+            }
+          },
+          "5": {
+            "daily": {
+              "1": [
+                "daylight"
+              ]
+            }
+          }
+        },
         "ability": "cha",
         "known": {
           "1": [
@@ -310,54 +327,170 @@
         "name": "Age",
         "type": "entries",
         "entries": [
-          "Aasimar mature at the same rate as humans, but they can live up to 160 years."
+          "Aasimar mature at the same rate as humans but live a few years longer."
         ]
       },
       {
         "type": "entries",
         "name": "Size",
         "entries": [
-          "Aasimar have the same range of height and weight as humans."
+          "Aasimar are built like well-proportioned humans. Your size is Medium."
         ]
       },
       {
         "name": "Darkvision",
         "entries": [
-          "Blessed with a radiant soul, your vision can easily cut through darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+          "Thanks to your celestial heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
         ],
         "type": "entries"
       },
       {
         "name": "Celestial Resistance",
         "entries": [
-          "You have resistance to necrotic damage and radiant damage."
+          "You have resistance to necrotic and radiant damage."
         ],
         "type": "entries"
       },
       {
-        "name": "Healing Hands",
+        "name": "Celestial Legacy",
         "entries": [
-          "As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest."
+          "You know the {@spell light} cantrip. Once you reach 3rd level, you can cast the {@spell lesser restoration} spell once with this trait, and you regain the ability to do so when you finish a long rest. Once you reach 5th level, you can cast the {@spell daylight} spell once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
         ],
         "type": "entries"
       },
       {
-        "name": "Light Bearer",
-        "entries": [
-          "You know the {@spell light} cantrip. Charisma is your spellcasting ability for it."
-        ],
-        "type": "entries"
-      },
-      {
-        "name": "Languages",
+        "name": "Language",
         "entries": [
           "You can speak, read, and write Common and Celestial."
         ],
         "type": "entries"
+      },
+      {
+        "name": "Radiant Soul",
+        "entries": [
+          "Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to glimmer and two luminous, incorporeal wings to sprout from your back.",
+          "Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level.",
+          "Once you use this trait, you can't use it again until you finish a long rest."
+        ],
+        "type": "entries"
+      }
+    ]
+  },
+  {
+    "name": "Aasimar (Scourge)",
+    "source": "DMG",
+    "page": 286,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "wis": 1,
+        "cha": 2
+      },
+      {
+        "con": 1
       }
     ],
-    "hasFluff": true,
-    "hasFluffImages": true
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "darkvision": 60,
+    "languageProficiencies": [
+      {
+        "common": true,
+        "celestial": true
+      }
+    ],
+    "resist": [
+      "necrotic",
+      "radiant"
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/aasimar.mp3"
+    },
+    "additionalSpells": [
+      {
+        "innate": {
+          "3": {
+            "daily": {
+              "1": [
+                "lesser restoration"
+              ]
+            }
+          },
+          "5": {
+            "daily": {
+              "1": [
+                "daylight"
+              ]
+            }
+          }
+        },
+        "ability": "cha",
+        "known": {
+          "1": [
+            "light#c"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Aasimar mature at the same rate as humans but live a few years longer."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Aasimar are built like well-proportioned humans. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Thanks to your celestial heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Celestial Resistance",
+        "entries": [
+          "You have resistance to necrotic and radiant damage."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Celestial Legacy",
+        "entries": [
+          "You know the {@spell light} cantrip. Once you reach 3rd level, you can cast the {@spell lesser restoration} spell once with this trait, and you regain the ability to do so when you finish a long rest. Once you reach 5th level, you can cast the {@spell daylight} spell once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Language",
+        "entries": [
+          "You can speak, read, and write Common and Celestial."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Radiant Consumption",
+        "entries": [
+          "Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing a searing light to radiate from you, pour out of your eyes and mouth, and threaten to char you.",
+          "Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, you and each creature within 10 feet of you take radiant damage equal to half your level (rounded up). In addition, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level.",
+          "Once you use this trait, you can't use it again until you finish a long rest."
+        ],
+        "type": "entries"
+      }
+    ]
   },
   {
     "name": "Bugbear",
@@ -879,7 +1012,533 @@
     ]
   },
   {
-    "name": "Dragonborn",
+    "name": "Dragonborn (Draconblood)",
+    "source": "PHB",
+    "page": 32,
+    "srd": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "str": 2,
+        "cha": 1
+      },
+      {
+        "int": 2,
+        "cha": 1
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 66,
+      "heightMod": "2d8",
+      "baseWeight": 175,
+      "weightMod": "2d6"
+    },
+    "age": {
+      "mature": 15,
+      "max": 80
+    },
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "draconic": true
+      }
+    ],
+    "resist": [
+      {
+        "choose": {
+          "from": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "poison"
+          ]
+        }
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/dragonborn.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Draconic Ancestry",
+        "entries": [
+          "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.",
+          {
+            "type": "table",
+            "caption": "Draconic Ancestry",
+            "colLabels": [
+              "Dragon",
+              "Damage Type",
+              "Breath Weapon"
+            ],
+            "colStyles": [
+              "col-3 text-center",
+              "col-3 text-center",
+              "col-6"
+            ],
+            "rows": [
+              [
+                "Black",
+                "Acid",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Blue",
+                "Lightning",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Brass",
+                "Fire",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Bronze",
+                "Lightning",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Copper",
+                "Acid",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Gold",
+                "Fire",
+                "15 ft. cone (Dex. save)"
+              ],
+              [
+                "Green",
+                "Poison",
+                "15 ft. cone (Con. save)"
+              ],
+              [
+                "Red",
+                "Fire",
+                "15 ft. cone (Dex. save)"
+              ],
+              [
+                "Silver",
+                "Cold",
+                "15 ft. cone (Con. save)"
+              ],
+              [
+                "White",
+                "Cold",
+                "15 ft. cone (Con. save)"
+              ]
+            ]
+          }
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Breath Weapon",
+        "entries": [
+          "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
+          "When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
+          "After you use your breath weapon, you can't use it again until you complete a short or long rest."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Damage Resistance",
+        "entries": [
+          "You have resistance to the damage type associated with your draconic ancestry."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Darkvision",
+        "entries": [
+          "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Forceful Presence",
+        "entries": [
+          "You can use your understanding of creative diplomacy or intimidation to guide a conversation in your favor. When you make a Charisma ({@skill Intimidation} or {@skill Persuasion}) check, you can do so with advantage. Once you use this trait, you can't do so again until you finish a short or long rest."
+        ],
+        "data": {
+          "overwrite": "Damage Resistance"
+        }
+      },
+      {
+        "name": "Draconic Ancestry",
+        "entries": [
+          "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon is determined by the dragon type, as shown in the table.",
+          {
+            "type": "table",
+            "caption": "Draconic Ancestry",
+            "colLabels": [
+              "Dragon",
+              "Damage Type",
+              "Breath Weapon"
+            ],
+            "colStyles": [
+              "col-3 text-center",
+              "col-3 text-center",
+              "col-6"
+            ],
+            "rows": [
+              [
+                "Black",
+                "Acid",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Blue",
+                "Lightning",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Brass",
+                "Fire",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Bronze",
+                "Lightning",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Copper",
+                "Acid",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Gold",
+                "Fire",
+                "15 ft. cone (Dex. save)"
+              ],
+              [
+                "Green",
+                "Poison",
+                "15 ft. cone (Con. save)"
+              ],
+              [
+                "Red",
+                "Fire",
+                "15 ft. cone (Dex. save)"
+              ],
+              [
+                "Silver",
+                "Cold",
+                "15 ft. cone (Con. save)"
+              ],
+              [
+                "White",
+                "Cold",
+                "15 ft. cone (Con. save)"
+              ]
+            ]
+          }
+        ],
+        "type": "entries",
+        "data": {
+          "overwrite": "Draconic Ancestry"
+        }
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Dragonborn (Ravenite)",
+    "source": "PHB",
+    "page": 32,
+    "srd": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "str": 2,
+        "cha": 1
+      },
+      {
+        "str": 2,
+        "con": 1
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 66,
+      "heightMod": "2d8",
+      "baseWeight": 175,
+      "weightMod": "2d6"
+    },
+    "age": {
+      "mature": 15,
+      "max": 80
+    },
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "draconic": true
+      }
+    ],
+    "resist": [
+      {
+        "choose": {
+          "from": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "poison"
+          ]
+        }
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/dragonborn.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Draconic Ancestry",
+        "entries": [
+          "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.",
+          {
+            "type": "table",
+            "caption": "Draconic Ancestry",
+            "colLabels": [
+              "Dragon",
+              "Damage Type",
+              "Breath Weapon"
+            ],
+            "colStyles": [
+              "col-3 text-center",
+              "col-3 text-center",
+              "col-6"
+            ],
+            "rows": [
+              [
+                "Black",
+                "Acid",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Blue",
+                "Lightning",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Brass",
+                "Fire",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Bronze",
+                "Lightning",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Copper",
+                "Acid",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Gold",
+                "Fire",
+                "15 ft. cone (Dex. save)"
+              ],
+              [
+                "Green",
+                "Poison",
+                "15 ft. cone (Con. save)"
+              ],
+              [
+                "Red",
+                "Fire",
+                "15 ft. cone (Dex. save)"
+              ],
+              [
+                "Silver",
+                "Cold",
+                "15 ft. cone (Con. save)"
+              ],
+              [
+                "White",
+                "Cold",
+                "15 ft. cone (Con. save)"
+              ]
+            ]
+          }
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Breath Weapon",
+        "entries": [
+          "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
+          "When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
+          "After you use your breath weapon, you can't use it again until you complete a short or long rest."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Damage Resistance",
+        "entries": [
+          "You have resistance to the damage type associated with your draconic ancestry."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Darkvision",
+        "entries": [
+          "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Vengeful Assault",
+        "entries": [
+          "When you take damage from a creature in range of a weapon you are wielding, you can use your reaction to make an attack with the weapon against that creature. Once you use this trait, you can't do so again until you finish a short or long rest."
+        ],
+        "data": {
+          "overwrite": "Damage Resistance"
+        }
+      },
+      {
+        "name": "Draconic Ancestry",
+        "entries": [
+          "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon is determined by the dragon type, as shown in the table.",
+          {
+            "type": "table",
+            "caption": "Draconic Ancestry",
+            "colLabels": [
+              "Dragon",
+              "Damage Type",
+              "Breath Weapon"
+            ],
+            "colStyles": [
+              "col-3 text-center",
+              "col-3 text-center",
+              "col-6"
+            ],
+            "rows": [
+              [
+                "Black",
+                "Acid",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Blue",
+                "Lightning",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Brass",
+                "Fire",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Bronze",
+                "Lightning",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Copper",
+                "Acid",
+                "5 by 30 ft. line (Dex. save)"
+              ],
+              [
+                "Gold",
+                "Fire",
+                "15 ft. cone (Dex. save)"
+              ],
+              [
+                "Green",
+                "Poison",
+                "15 ft. cone (Con. save)"
+              ],
+              [
+                "Red",
+                "Fire",
+                "15 ft. cone (Dex. save)"
+              ],
+              [
+                "Silver",
+                "Cold",
+                "15 ft. cone (Con. save)"
+              ],
+              [
+                "White",
+                "Cold",
+                "15 ft. cone (Con. save)"
+              ]
+            ]
+          }
+        ],
+        "type": "entries",
+        "data": {
+          "overwrite": "Draconic Ancestry"
+        }
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Dragonborn (undefined)",
     "source": "PHB",
     "page": 32,
     "srd": true,
@@ -1045,7 +1704,7 @@
     "hasFluffImages": true
   },
   {
-    "name": "Dwarf",
+    "name": "Dwarf (Hill)",
     "source": "PHB",
     "page": 18,
     "srd": true,
@@ -1057,6 +1716,9 @@
     "ability": [
       {
         "con": 2
+      },
+      {
+        "wis": 1
       }
     ],
     "age": {
@@ -1159,13 +1821,328 @@
           "You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
         ],
         "type": "entries"
+      },
+      {
+        "name": "Dwarven Toughness",
+        "entries": [
+          "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+        ],
+        "type": "entries"
       }
     ],
     "hasFluff": true,
     "hasFluffImages": true
   },
   {
-    "name": "Elf",
+    "name": "Dwarf (Mark of Warding)",
+    "source": "PHB",
+    "page": 18,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "M"
+    ],
+    "speed": 25,
+    "ability": [
+      {
+        "con": 2
+      },
+      {
+        "int": 1
+      }
+    ],
+    "age": {
+      "mature": 20,
+      "max": 350
+    },
+    "darkvision": 60,
+    "languageProficiencies": [
+      {
+        "common": true,
+        "dwarvish": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "choose": {
+          "from": [
+            "smith's tools",
+            "brewer's supplies",
+            "mason's tools"
+          ]
+        }
+      }
+    ],
+    "weaponProficiencies": [
+      {
+        "battleaxe|phb": true,
+        "handaxe|phb": true,
+        "light hammer|phb": true,
+        "warhammer|phb": true
+      }
+    ],
+    "resist": [
+      "poison"
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/dwarf.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Speed",
+        "entries": [
+          "Your speed is not reduced by wearing heavy armor."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Dwarven Resilience",
+        "entries": [
+          "You have advantage on saving throws against poison, and you have resistance against poison damage."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Dwarven Combat Training",
+        "entries": [
+          "You have proficiency with the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Tool Proficiency",
+        "entries": [
+          "You gain proficiency with the {@item artisan's tools|PHB} of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Stonecunning",
+        "entries": [
+          "Whenever you make an Intelligence ({@skill History}) check related to the origin of stonework, you are considered proficient in the {@skill History} skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Warder's Intuition",
+        "entries": [
+          "When you make an Intelligence ({@skill Investigation}) check or an ability check using {@item thieves' tools|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Wards and Seals",
+        "entries": [
+          "You can cast the {@spell alarm} and {@spell mage armor} spells with this trait. Starting at 3rd level, you can also cast the {@spell arcane lock} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence is your spellcasting ability for these spells, and you don't need material components for them when you cast them with this trait."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spells of the Mark",
+        "entries": [
+          "If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Warding Spells table are added to the spell list of your spellcasting class.",
+          {
+            "type": "table",
+            "caption": "Mark of Warding Spells",
+            "colLabels": [
+              "Spell Level",
+              "Spells"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1st",
+                "{@spell alarm}, {@spell armor of Agathys}"
+              ],
+              [
+                "2nd",
+                "{@spell arcane lock}, {@spell knock}"
+              ],
+              [
+                "3rd",
+                "{@spell glyph of warding}, {@spell magic circle}"
+              ],
+              [
+                "4th",
+                "{@spell Leomund's secret chest}, {@spell Mordenkainen's faithful hound}"
+              ],
+              [
+                "5th",
+                "{@spell antilife shell}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Dwarf (Mountain)",
+    "source": "PHB",
+    "page": 18,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "M"
+    ],
+    "speed": 25,
+    "ability": [
+      {
+        "con": 2
+      },
+      {
+        "str": 2
+      }
+    ],
+    "age": {
+      "mature": 20,
+      "max": 350
+    },
+    "darkvision": 60,
+    "languageProficiencies": [
+      {
+        "common": true,
+        "dwarvish": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "choose": {
+          "from": [
+            "smith's tools",
+            "brewer's supplies",
+            "mason's tools"
+          ]
+        }
+      }
+    ],
+    "weaponProficiencies": [
+      {
+        "battleaxe|phb": true,
+        "handaxe|phb": true,
+        "light hammer|phb": true,
+        "warhammer|phb": true
+      }
+    ],
+    "resist": [
+      "poison"
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/dwarf.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Speed",
+        "entries": [
+          "Your speed is not reduced by wearing heavy armor."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Dwarven Resilience",
+        "entries": [
+          "You have advantage on saving throws against poison, and you have resistance against poison damage."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Dwarven Combat Training",
+        "entries": [
+          "You have proficiency with the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Tool Proficiency",
+        "entries": [
+          "You gain proficiency with the {@item artisan's tools|PHB} of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Stonecunning",
+        "entries": [
+          "Whenever you make an Intelligence ({@skill History}) check related to the origin of stonework, you are considered proficient in the {@skill History} skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Dwarven Armor Training",
+        "entries": [
+          "You have proficiency with light and medium armor."
+        ],
+        "type": "entries"
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Elf (Drow)",
     "source": "PHB",
     "page": 21,
     "srd": true,
@@ -1177,6 +2154,9 @@
     "ability": [
       {
         "dex": 2
+      },
+      {
+        "cha": 1
       }
     ],
     "age": {
@@ -1250,6 +2230,642 @@
         "name": "Languages",
         "entries": [
           "You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Superior Darkvision",
+        "entries": [
+          "Accustomed to the depths of the Underdark, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "data": {
+          "overwrite": "Darkvision"
+        },
+        "type": "entries"
+      },
+      {
+        "name": "Sunlight Sensitivity",
+        "entries": [
+          "You have disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Drow Magic",
+        "entries": [
+          "You know the {@spell dancing lights} cantrip. When you reach 3rd level, you can cast the {@spell faerie fire} spell once with this trait; you regain the ability to cast it when you finish a long rest. When you reach 5th level, you can also cast the {@spell darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Drow Weapon Training",
+        "entries": [
+          "You have proficiency with {@item rapier|phb|rapiers}, {@item shortsword|phb|shortswords}, and {@item hand crossbow|phb|hand crossbows}."
+        ],
+        "type": "entries"
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Elf (Eladrin)",
+    "source": "PHB",
+    "page": 21,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "dex": 2
+      },
+      {
+        "int": 1
+      }
+    ],
+    "age": {
+      "mature": 100,
+      "max": 750
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Improved Resting"
+    ],
+    "skillProficiencies": [
+      {
+        "perception": true
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "elvish": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/elf.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Keen Senses",
+        "entries": [
+          "You have proficiency in the {@skill Perception} skill."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Fey Ancestry",
+        "entries": [
+          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Trance",
+        "entries": [
+          "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+          "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Elf Weapon Training",
+        "entries": [
+          "You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Fey Step",
+        "entries": [
+          "You can cast the {@spell misty step} spell once using this trait. You regain the ability to do so when you finish a short or long rest."
+        ],
+        "type": "entries"
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Elf (High)",
+    "source": "PHB",
+    "page": 21,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "dex": 2
+      },
+      {
+        "int": 1
+      }
+    ],
+    "age": {
+      "mature": 100,
+      "max": 750
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Improved Resting"
+    ],
+    "skillProficiencies": [
+      {
+        "perception": true
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "elvish": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/elf.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Keen Senses",
+        "entries": [
+          "You have proficiency in the {@skill Perception} skill."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Fey Ancestry",
+        "entries": [
+          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Trance",
+        "entries": [
+          "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+          "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Elf Weapon Training",
+        "entries": [
+          "You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Cantrip",
+        "entries": [
+          "You know one {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}. Intelligence is your spellcasting ability for it."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Extra Language",
+        "entries": [
+          "You can speak, read, and write one extra language of your choosing."
+        ],
+        "type": "entries"
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Elf (Mark of Shadow)",
+    "source": "PHB",
+    "page": 21,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "dex": 2
+      },
+      {
+        "cha": 1
+      }
+    ],
+    "age": {
+      "mature": 100,
+      "max": 750
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Improved Resting"
+    ],
+    "skillProficiencies": [
+      {
+        "perception": true
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "elvish": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/elf.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Keen Senses",
+        "entries": [
+          "You have proficiency in the {@skill Perception} skill."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Fey Ancestry",
+        "entries": [
+          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Trance",
+        "entries": [
+          "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+          "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Cunning Intuition",
+        "entries": [
+          "When you make a Charisma ({@skill Performance}) or Dexterity ({@skill Stealth}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Shape Shadows",
+        "entries": [
+          "You know the {@spell minor illusion} cantrip. Starting at 3rd level, you can cast the {@spell invisibility} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spells of the Mark",
+        "entries": [
+          "If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Shadow Spells table are added to the spell list of your spellcasting class.",
+          {
+            "type": "table",
+            "caption": "Mark of Shadow Spells",
+            "colLabels": [
+              "Spell Level",
+              "Spells"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1st",
+                "{@spell disguise self}, {@spell silent image}"
+              ],
+              [
+                "2nd",
+                "{@spell darkness}, {@spell pass without trace}"
+              ],
+              [
+                "3rd",
+                "{@spell clairvoyance}, {@spell major image}"
+              ],
+              [
+                "4th",
+                "{@spell greater invisibility}, {@spell hallucinatory terrain}"
+              ],
+              [
+                "5th",
+                "{@spell mislead}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Elf (Pallid)",
+    "source": "PHB",
+    "page": 21,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "dex": 2
+      },
+      {
+        "wis": 1
+      }
+    ],
+    "age": {
+      "mature": 100,
+      "max": 750
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Improved Resting"
+    ],
+    "skillProficiencies": [
+      {
+        "perception": true
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "elvish": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/elf.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Keen Senses",
+        "entries": [
+          "You have proficiency in the {@skill Perception} skill."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Fey Ancestry",
+        "entries": [
+          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Trance",
+        "entries": [
+          "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+          "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Incisive Sense",
+        "entries": [
+          "You have advantage on Intelligence ({@skill Investigation}) and Wisdom ({@skill Insight}) checks."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Blessing of the Moon Weaver",
+        "entries": [
+          "You know the {@spell light} cantrip. When you reach 3rd level, you can cast the {@spell sleep} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell invisibility} spell (targeting yourself only) once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Elf (Wood)",
+    "source": "PHB",
+    "page": 21,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "dex": 2
+      },
+      {
+        "wis": 1
+      }
+    ],
+    "age": {
+      "mature": 100,
+      "max": 750
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Improved Resting"
+    ],
+    "skillProficiencies": [
+      {
+        "perception": true
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "elvish": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/elf.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Keen Senses",
+        "entries": [
+          "You have proficiency in the {@skill Perception} skill."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Fey Ancestry",
+        "entries": [
+          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Trance",
+        "entries": [
+          "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+          "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Elf Weapon Training",
+        "entries": [
+          "You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Fleet of Foot",
+        "entries": [
+          "Your base walking speed increases to 35 feet."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Mask of the Wild",
+        "entries": [
+          "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
         ],
         "type": "entries"
       }
@@ -1374,7 +2990,7 @@
     "hasFluffImages": true
   },
   {
-    "name": "Genasi",
+    "name": "Genasi (Air)",
     "source": "EEPC",
     "page": 9,
     "additionalSources": [
@@ -1399,6 +3015,9 @@
     "ability": [
       {
         "con": 2
+      },
+      {
+        "dex": 1
       }
     ],
     "heightAndWeight": {
@@ -1447,6 +3066,335 @@
         "name": "Languages",
         "entries": [
           "You can speak, read, and write Common and Primordial. Primordial is a guttural language, filled with harsh syllables and hard consonants."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Unending Breath",
+        "entries": [
+          "You can hold your breath indefinitely while you're not {@condition incapacitated}."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Mingle with the Wind",
+        "entries": [
+          "You can cast the {@spell levitate} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell."
+        ],
+        "type": "entries"
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Genasi (Earth)",
+    "source": "EEPC",
+    "page": 9,
+    "additionalSources": [
+      {
+        "source": "EGW",
+        "page": 170
+      }
+    ],
+    "otherSources": [
+      {
+        "source": "EGW",
+        "page": 170
+      }
+    ],
+    "reprintedAs": [
+      "Genasi|MPMM"
+    ],
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "con": 2
+      },
+      {
+        "str": 1
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 56,
+      "heightMod": "2d10",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 120
+    },
+    "languageProficiencies": [
+      {
+        "common": true,
+        "primordial": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/genasi.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Genasi mature at about the same rate as humans and reach adulthood in their late teens. They live somewhat longer than humans do, up to 120 years."
+        ]
+      },
+      {
+        "name": "Alignment",
+        "type": "entries",
+        "entries": [
+          "Independent and self-reliant, genasi tend toward a neutral alignment."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Genasi are as varied as their mortal parents but are generally built like humans, standing anywhere from 5 feet to over 6 feet tall. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Primordial. Primordial is a guttural language, filled with harsh syllables and hard consonants."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Earth Walk",
+        "entries": [
+          "You can move across {@quickref difficult terrain||3} made of earth or stone without expending extra movement."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Merge with Stone",
+        "entries": [
+          "You can cast the {@spell pass without trace} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell."
+        ],
+        "type": "entries"
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Genasi (Fire)",
+    "source": "EEPC",
+    "page": 9,
+    "additionalSources": [
+      {
+        "source": "EGW",
+        "page": 170
+      }
+    ],
+    "otherSources": [
+      {
+        "source": "EGW",
+        "page": 170
+      }
+    ],
+    "reprintedAs": [
+      "Genasi|MPMM"
+    ],
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "con": 2
+      },
+      {
+        "int": 1
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 56,
+      "heightMod": "2d10",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 120
+    },
+    "languageProficiencies": [
+      {
+        "common": true,
+        "primordial": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/genasi.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Genasi mature at about the same rate as humans and reach adulthood in their late teens. They live somewhat longer than humans do, up to 120 years."
+        ]
+      },
+      {
+        "name": "Alignment",
+        "type": "entries",
+        "entries": [
+          "Independent and self-reliant, genasi tend toward a neutral alignment."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Genasi are as varied as their mortal parents but are generally built like humans, standing anywhere from 5 feet to over 6 feet tall. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Primordial. Primordial is a guttural language, filled with harsh syllables and hard consonants."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. Your ties to the Elemental Plane of Fire make your darkvision unusual: everything you see in darkness is in a shade of red."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Fire Resistance",
+        "entries": [
+          "You have resistance to fire damage."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Reach to the Blaze",
+        "entries": [
+          "You know the {@spell produce flame} cantrip. Once you reach 3rd level, you can cast the {@spell burning hands} spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells."
+        ],
+        "type": "entries"
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Genasi (Water)",
+    "source": "EEPC",
+    "page": 9,
+    "additionalSources": [
+      {
+        "source": "EGW",
+        "page": 170
+      }
+    ],
+    "otherSources": [
+      {
+        "source": "EGW",
+        "page": 170
+      }
+    ],
+    "reprintedAs": [
+      "Genasi|MPMM"
+    ],
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "con": 2
+      },
+      {
+        "wis": 1
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 56,
+      "heightMod": "2d10",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 120
+    },
+    "languageProficiencies": [
+      {
+        "common": true,
+        "primordial": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/genasi.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Genasi mature at about the same rate as humans and reach adulthood in their late teens. They live somewhat longer than humans do, up to 120 years."
+        ]
+      },
+      {
+        "name": "Alignment",
+        "type": "entries",
+        "entries": [
+          "Independent and self-reliant, genasi tend toward a neutral alignment."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Genasi are as varied as their mortal parents but are generally built like humans, standing anywhere from 5 feet to over 6 feet tall. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Primordial. Primordial is a guttural language, filled with harsh syllables and hard consonants."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Acid Resistance",
+        "entries": [
+          "You have resistance to acid damage."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Amphibious",
+        "entries": [
+          "You can breathe air and water."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Swim",
+        "entries": [
+          "You have a swimming speed of 30 feet."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Call to the Wave",
+        "entries": [
+          "You know the {@spell shape water|xge} cantrip. When you reach 3rd level, you can cast the {@spell create or destroy water} spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells."
         ],
         "type": "entries"
       }
@@ -1500,83 +3448,6 @@
         ]
       }
     ]
-  },
-  {
-    "name": "Gnome",
-    "source": "PHB",
-    "page": 35,
-    "srd": true,
-    "size": [
-      "S"
-    ],
-    "speed": 25,
-    "ability": [
-      {
-        "int": 2
-      }
-    ],
-    "heightAndWeight": {
-      "baseHeight": 35,
-      "heightMod": "2d4",
-      "baseWeight": 35
-    },
-    "age": {
-      "mature": 40,
-      "max": 500
-    },
-    "darkvision": 60,
-    "traitTags": [
-      "Uncommon Race"
-    ],
-    "languageProficiencies": [
-      {
-        "common": true,
-        "gnomish": true
-      }
-    ],
-    "soundClip": {
-      "type": "internal",
-      "path": "races/gnome.mp3"
-    },
-    "entries": [
-      {
-        "name": "Age",
-        "type": "entries",
-        "entries": [
-          "Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years."
-        ]
-      },
-      {
-        "type": "entries",
-        "name": "Size",
-        "entries": [
-          "Gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small."
-        ]
-      },
-      {
-        "name": "Darkvision",
-        "entries": [
-          "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-        ],
-        "type": "entries"
-      },
-      {
-        "name": "Gnome Cunning",
-        "entries": [
-          "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
-        ],
-        "type": "entries"
-      },
-      {
-        "name": "Languages",
-        "entries": [
-          "You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world."
-        ],
-        "type": "entries"
-      }
-    ],
-    "hasFluff": true,
-    "hasFluffImages": true
   },
   {
     "name": "Gnome (Deep)",
@@ -1677,6 +3548,488 @@
         "type": "entries"
       }
     ]
+  },
+  {
+    "name": "Gnome (Deep/Svirfneblin)",
+    "source": "PHB",
+    "page": 35,
+    "srd": true,
+    "size": [
+      "S"
+    ],
+    "speed": 25,
+    "ability": [
+      {
+        "int": 2
+      },
+      {
+        "dex": 1
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 35,
+      "heightMod": "2d4",
+      "baseWeight": 35
+    },
+    "age": {
+      "mature": 40,
+      "max": 500
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "gnomish": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/gnome.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Gnome Cunning",
+        "entries": [
+          "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Deep gnomes are short-lived for gnomes. They mature at the same rate humans do and are considered full-grown adults by 25. They live 200 to 250 years, although hard toil and the dangers of the Underdark often claim them before their time."
+        ],
+        "data": {
+          "overwrite": "Age"
+        }
+      },
+      {
+        "name": "Alignment",
+        "type": "entries",
+        "entries": [
+          "Svirfneblin believe that survival depends on avoiding entanglements with other creatures and not making enemies, so they favor neutral alignments. They rarely wish others ill, and they are unlikely to take risks on behalf of others."
+        ],
+        "data": {
+          "overwrite": "Alignment"
+        }
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "A typical svirfneblin stands about 3 to 3½ feet tall and weighs 80 to 120 pounds. Your size is Small."
+        ],
+        "data": {
+          "overwrite": "Size"
+        }
+      },
+      {
+        "name": "Superior Darkvision",
+        "entries": [
+          "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "data": {
+          "overwrite": "Darkvision"
+        },
+        "type": "entries"
+      },
+      {
+        "name": "Stone Camouflage",
+        "entries": [
+          "You have advantage on Dexterity ({@skill Stealth}) checks to hide in rocky terrain."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common, Gnomish, and Undercommon. The svirfneblin dialect is more guttural than surface Gnomish, and most svirfneblin know only a little bit of Common, but those who deal with outsiders (and that includes you as an adventurer) pick up enough Common to get by in other lands."
+        ],
+        "data": {
+          "overwrite": "Languages"
+        },
+        "type": "entries"
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Gnome (Forest)",
+    "source": "PHB",
+    "page": 35,
+    "srd": true,
+    "size": [
+      "S"
+    ],
+    "speed": 25,
+    "ability": [
+      {
+        "int": 2
+      },
+      {
+        "dex": 1
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 35,
+      "heightMod": "2d4",
+      "baseWeight": 35
+    },
+    "age": {
+      "mature": 40,
+      "max": 500
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "gnomish": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/gnome.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Gnome Cunning",
+        "entries": [
+          "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Natural Illusionist",
+        "entries": [
+          "You know the {@spell minor illusion} cantrip. Intelligence is your spellcasting ability for it."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Speak with Small Beasts",
+        "entries": [
+          "Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts. Forest gnomes love animals and often keep squirrels, badgers, rabbits, moles, woodpeckers, and other creatures as beloved pets."
+        ],
+        "type": "entries"
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Gnome (Mark of Scribing)",
+    "source": "PHB",
+    "page": 35,
+    "srd": true,
+    "size": [
+      "S"
+    ],
+    "speed": 25,
+    "ability": [
+      {
+        "int": 2
+      },
+      {
+        "cha": 1
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 35,
+      "heightMod": "2d4",
+      "baseWeight": 35
+    },
+    "age": {
+      "mature": 40,
+      "max": 500
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "gnomish": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/gnome.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Gnome Cunning",
+        "entries": [
+          "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Gifted Scribe",
+        "entries": [
+          "When you make an Intelligence ({@skill History}) check or an ability check using {@item calligrapher's supplies|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Scribe's Insight",
+        "entries": [
+          "You know the {@spell message} cantrip. You can also cast {@spell comprehend languages} once with this trait, and you regain the ability to cast it when you finish a short or long rest. Starting at 3rd level, you can cast the {@spell magic mouth} spell with this trait, and you regain the ability to cast it when you finish a long rest. Intelligence is your spellcasting ability for these spells."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spells of the Mark",
+        "entries": [
+          "If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Scribing Spells table are added to the spell list of your spellcasting class.",
+          {
+            "type": "table",
+            "caption": "Mark of Scribing Spells",
+            "colLabels": [
+              "Spell Level",
+              "Spells"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1st",
+                "{@spell comprehend languages}, {@spell illusory script}"
+              ],
+              [
+                "2nd",
+                "{@spell animal messenger}, {@spell silence}"
+              ],
+              [
+                "3rd",
+                "{@spell sending}, {@spell tongues}"
+              ],
+              [
+                "4th",
+                "{@spell arcane eye}, {@spell confusion}"
+              ],
+              [
+                "5th",
+                "{@spell dream}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Gnome (Rock)",
+    "source": "PHB",
+    "page": 35,
+    "srd": true,
+    "size": [
+      "S"
+    ],
+    "speed": 25,
+    "ability": [
+      {
+        "int": 2
+      },
+      {
+        "con": 1
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 35,
+      "heightMod": "2d4",
+      "baseWeight": 35
+    },
+    "age": {
+      "mature": 40,
+      "max": 500
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "gnomish": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/gnome.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Gnome Cunning",
+        "entries": [
+          "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Artificer's Lore",
+        "entries": [
+          "Whenever you make an Intelligence ({@skill History}) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Tinker",
+        "entries": [
+          "You have proficiency with {@item artisan's tools|PHB} ({@item tinker's tools|phb}). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time.",
+          "When you create a device, choose one of the following options:",
+          {
+            "type": "entries",
+            "name": "Clockwork Toy",
+            "entries": [
+              "This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Fire Starter",
+            "entries": [
+              "The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Music Box",
+            "entries": [
+              "When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed."
+            ]
+          }
+        ],
+        "type": "entries"
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
   },
   {
     "name": "Goblin",
@@ -2043,7 +4396,7 @@
     ]
   },
   {
-    "name": "Half-Elf",
+    "name": "Half-Elf (undefined)",
     "source": "PHB",
     "page": 38,
     "srd": true,
@@ -2144,7 +4497,866 @@
     "hasFluffImages": true
   },
   {
-    "name": "Half-Orc",
+    "name": "Half-Elf (Variant; Aquatic Elf Descent)",
+    "source": "PHB",
+    "page": 38,
+    "srd": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "cha": 2,
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis"
+          ],
+          "count": 2
+        }
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 57,
+      "heightMod": "2d8",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 180
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "skillProficiencies": [
+      {
+        "any": 2
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "elvish": true,
+        "anyStandard": 1
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/half-elf.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Fey Ancestry",
+        "entries": [
+          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Skill Versatility",
+        "entries": [
+          "You gain proficiency in two skills of your choice."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common, Elvish, and one extra language of your choice."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "inset",
+        "name": "Variant Feature (Choose 1)",
+        "entries": [
+          {
+            "name": "Skill Versatility",
+            "entries": [
+              "You gain proficiency in two skills of your choice."
+            ],
+            "type": "entries"
+          },
+          {
+            "name": "Swim",
+            "entries": [
+              "You gain a swimming speed of 30 ft."
+            ],
+            "type": "entries"
+          }
+        ],
+        "data": {
+          "overwrite": "Skill Versatility"
+        }
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Half-Elf (Variant; Drow Descent)",
+    "source": "PHB",
+    "page": 38,
+    "srd": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "cha": 2,
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis"
+          ],
+          "count": 2
+        }
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 57,
+      "heightMod": "2d8",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 180
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "skillProficiencies": [
+      {
+        "any": 2
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "elvish": true,
+        "anyStandard": 1
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/half-elf.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Fey Ancestry",
+        "entries": [
+          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Skill Versatility",
+        "entries": [
+          "You gain proficiency in two skills of your choice."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common, Elvish, and one extra language of your choice."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "inset",
+        "name": "Variant Feature (Choose 1)",
+        "entries": [
+          {
+            "name": "Skill Versatility",
+            "entries": [
+              "You gain proficiency in two skills of your choice."
+            ],
+            "type": "entries"
+          },
+          {
+            "name": "Drow Magic",
+            "entries": [
+              "You know the {@spell dancing lights} cantrip. When you reach 3rd level, you can cast the {@spell faerie fire} spell once per day; you must finish a long rest in order to cast the spell again using this trait. When you reach 5th level, you can also cast the {@spell darkness} spell once per day; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+            ],
+            "type": "entries"
+          }
+        ],
+        "data": {
+          "overwrite": "Skill Versatility"
+        }
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Half-Elf (Variant; Mark of Detection)",
+    "source": "PHB",
+    "page": 38,
+    "srd": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "cha": 2,
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis"
+          ],
+          "count": 2
+        }
+      },
+      {
+        "wis": 2,
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "cha"
+          ],
+          "count": 1
+        }
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 57,
+      "heightMod": "2d8",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 180
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "skillProficiencies": [
+      {
+        "any": 2
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "elvish": true,
+        "anyStandard": 1
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/half-elf.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Fey Ancestry",
+        "entries": [
+          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Skill Versatility",
+        "entries": [
+          "You gain proficiency in two skills of your choice."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common, Elvish, and one extra language of your choice."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Deductive Intuition",
+        "entries": [
+          "When you make an Intelligence ({@skill Investigation}) or a Wisdom ({@skill Insight}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+        ],
+        "data": {
+          "overwrite": "Skill Versatility"
+        }
+      },
+      {
+        "type": "entries",
+        "name": "Magical Detection",
+        "entries": [
+          "You can cast the {@spell detect magic} and {@spell detect poison and disease} spells with this trait. Starting at 3rd level, you can also cast the {@spell see invisibility} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells, and you don't require material components for them."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spells of the Mark",
+        "entries": [
+          "If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Detection Spells table are added to the spell list of your spellcasting class.",
+          {
+            "type": "table",
+            "caption": "Mark of Detection Spells",
+            "colLabels": [
+              "Spell Level",
+              "Spells"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1st",
+                "{@spell detect evil and good}, {@spell detect poison and disease}"
+              ],
+              [
+                "2nd",
+                "{@spell detect thoughts}, {@spell find traps}"
+              ],
+              [
+                "3rd",
+                "{@spell clairvoyance}, {@spell nondetection}"
+              ],
+              [
+                "4th",
+                "{@spell arcane eye}, {@spell divination}"
+              ],
+              [
+                "5th",
+                "{@spell legend lore}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Half-Elf (Variant; Mark of Storm)",
+    "source": "PHB",
+    "page": 38,
+    "srd": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "cha": 2,
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis"
+          ],
+          "count": 2
+        }
+      },
+      {
+        "cha": 2,
+        "dex": 1
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 57,
+      "heightMod": "2d8",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 180
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "skillProficiencies": [
+      {
+        "any": 2
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "elvish": true,
+        "anyStandard": 1
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/half-elf.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Fey Ancestry",
+        "entries": [
+          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Skill Versatility",
+        "entries": [
+          "You gain proficiency in two skills of your choice."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common, Elvish, and one extra language of your choice."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Windwright's Intuition",
+        "entries": [
+          "When you make a Dexterity ({@skill Acrobatics}) check or any ability check involving {@item navigator's tools|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check."
+        ],
+        "data": {
+          "overwrite": "Skill Versatility"
+        }
+      },
+      {
+        "type": "entries",
+        "name": "Storm's Boon",
+        "entries": [
+          "You have resistance to lightning damage."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Headwinds",
+        "entries": [
+          "You know the {@spell gust|XGE} cantrip. Starting at 3rd level, you can cast the {@spell gust of wind} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spells of the Mark",
+        "entries": [
+          "If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Storm Spells table are added to the spell list of your spellcasting class.",
+          {
+            "type": "table",
+            "caption": "Mark of Storm Spells",
+            "colLabels": [
+              "Spell Level",
+              "Spells"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1st",
+                "{@spell feather fall}, {@spell fog cloud}"
+              ],
+              [
+                "2nd",
+                "{@spell gust of wind}, {@spell levitate}"
+              ],
+              [
+                "3rd",
+                "{@spell sleet storm}, {@spell wind wall}"
+              ],
+              [
+                "4th",
+                "{@spell conjure minor elementals}, {@spell control water}"
+              ],
+              [
+                "5th",
+                "{@spell conjure elemental}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+    "source": "PHB",
+    "page": 38,
+    "srd": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "cha": 2,
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis"
+          ],
+          "count": 2
+        }
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 57,
+      "heightMod": "2d8",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 180
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "skillProficiencies": [
+      {
+        "any": 2
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "elvish": true,
+        "anyStandard": 1
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/half-elf.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Fey Ancestry",
+        "entries": [
+          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Skill Versatility",
+        "entries": [
+          "You gain proficiency in two skills of your choice."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common, Elvish, and one extra language of your choice."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "inset",
+        "name": "Variant Feature (Choose 1)",
+        "entries": [
+          {
+            "name": "Skill Versatility",
+            "entries": [
+              "You gain proficiency in two skills of your choice."
+            ],
+            "type": "entries"
+          },
+          {
+            "name": "Elf Weapon Training",
+            "entries": [
+              "You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+            ],
+            "type": "entries"
+          },
+          {
+            "name": "Cantrip",
+            "entries": [
+              "You know one cantrip of your choice from the {@filter wizard spell list|spells|class=wizard|level=0}. Intelligence is your spellcasting ability for it."
+            ],
+            "type": "entries"
+          }
+        ],
+        "data": {
+          "overwrite": "Skill Versatility"
+        }
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Half-Elf (Variant; Wood Elf Descent)",
+    "source": "PHB",
+    "page": 38,
+    "srd": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "cha": 2,
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis"
+          ],
+          "count": 2
+        }
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 57,
+      "heightMod": "2d8",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 180
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "skillProficiencies": [
+      {
+        "any": 2
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "elvish": true,
+        "anyStandard": 1
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/half-elf.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Fey Ancestry",
+        "entries": [
+          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Skill Versatility",
+        "entries": [
+          "You gain proficiency in two skills of your choice."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common, Elvish, and one extra language of your choice."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "inset",
+        "name": "Variant Feature (Choose 1)",
+        "entries": [
+          {
+            "name": "Skill Versatility",
+            "entries": [
+              "You gain proficiency in two skills of your choice."
+            ],
+            "type": "entries"
+          },
+          {
+            "name": "Elf Weapon Training",
+            "entries": [
+              "You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+            ],
+            "type": "entries"
+          },
+          {
+            "name": "Fleet of Foot",
+            "entries": [
+              "Your base walking speed increases to 35 feet."
+            ],
+            "type": "entries"
+          },
+          {
+            "name": "Mask of the Wild",
+            "entries": [
+              "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+            ],
+            "type": "entries"
+          }
+        ],
+        "data": {
+          "overwrite": "Skill Versatility"
+        }
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Half-Orc (undefined)",
     "source": "PHB",
     "page": 40,
     "srd": true,
@@ -2242,7 +5454,189 @@
     "hasFluffImages": true
   },
   {
-    "name": "Halfling",
+    "name": "Half-Orc (Variant; Mark of Finding)",
+    "source": "PHB",
+    "page": 40,
+    "srd": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "str": 2,
+        "con": 1
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 58,
+      "heightMod": "2d10",
+      "baseWeight": 140,
+      "weightMod": "2d6"
+    },
+    "age": {
+      "mature": 14,
+      "max": 75
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "skillProficiencies": [
+      {
+        "intimidation": true
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "orc": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/half-orc.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Half-orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Half-orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Menacing",
+        "entries": [
+          "You gain proficiency in the {@skill Intimidation} skill."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Relentless Endurance",
+        "entries": [
+          "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Savage Attacks",
+        "entries": [
+          "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Orc. Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Darkvision",
+        "entries": [
+          "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "data": {
+          "overwrite": "Darkvision"
+        }
+      },
+      {
+        "type": "entries",
+        "name": "Hunter's Intuition",
+        "entries": [
+          "When you make a Wisdom ({@skill Perception}) or Wisdom ({@skill Survival}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+        ],
+        "data": {
+          "overwrite": "Menacing"
+        }
+      },
+      {
+        "type": "entries",
+        "name": "Finder's Magic",
+        "entries": [
+          "You can cast the {@spell hunter's mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell locate object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+        ],
+        "data": {
+          "overwrite": "Relentless Endurance"
+        }
+      },
+      {
+        "type": "entries",
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Goblin."
+        ],
+        "data": {
+          "overwrite": "Languages"
+        }
+      },
+      {
+        "type": "entries",
+        "name": "Spells of the Mark",
+        "entries": [
+          "If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Finding Spells table are added to the spell list of your spellcasting class.",
+          {
+            "type": "table",
+            "caption": "Mark of Finding Spells",
+            "colLabels": [
+              "Spell Level",
+              "Spells"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1st",
+                "{@spell faerie fire}, {@spell longstrider}"
+              ],
+              [
+                "2nd",
+                "{@spell locate animals or plants}, {@spell locate object}"
+              ],
+              [
+                "3rd",
+                "{@spell clairvoyance}, {@spell speak with plants}"
+              ],
+              [
+                "4th",
+                "{@spell divination}, {@spell locate creature}"
+              ],
+              [
+                "5th",
+                "{@spell commune with nature}"
+              ]
+            ]
+          }
+        ],
+        "data": {
+          "overwrite": "Savage Attacks"
+        }
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Halfling (Ghostwise)",
     "source": "PHB",
     "page": 26,
     "srd": true,
@@ -2254,6 +5648,9 @@
     "ability": [
       {
         "dex": 2
+      },
+      {
+        "wis": 1
       }
     ],
     "heightAndWeight": {
@@ -2315,6 +5712,571 @@
         "name": "Languages",
         "entries": [
           "You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Silent Speech",
+        "entries": [
+          "You can speak telepathically to any creature within 30 feet of you. The creature understands you only if the two of you share a language. You can speak telepathically in this way to one creature at a time."
+        ],
+        "type": "entries"
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Halfling (Lightfoot)",
+    "source": "PHB",
+    "page": 26,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "S"
+    ],
+    "speed": 25,
+    "ability": [
+      {
+        "dex": 2
+      },
+      {
+        "cha": 1
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 31,
+      "heightMod": "2d4",
+      "baseWeight": 35
+    },
+    "age": {
+      "mature": 20,
+      "max": 250
+    },
+    "languageProficiencies": [
+      {
+        "common": true,
+        "halfling": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/halfling.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small."
+        ]
+      },
+      {
+        "name": "Lucky",
+        "entries": [
+          "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Brave",
+        "entries": [
+          "You have advantage on saving throws against being {@condition frightened}."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Halfling Nimbleness",
+        "entries": [
+          "You can move through the space of any creature that is of a size larger than yours."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Naturally Stealthy",
+        "entries": [
+          "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
+        ],
+        "type": "entries"
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Halfling (Lotusden)",
+    "source": "PHB",
+    "page": 26,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "S"
+    ],
+    "speed": 25,
+    "ability": [
+      {
+        "dex": 2
+      },
+      {
+        "wis": 1
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 31,
+      "heightMod": "2d4",
+      "baseWeight": 35
+    },
+    "age": {
+      "mature": 20,
+      "max": 250
+    },
+    "languageProficiencies": [
+      {
+        "common": true,
+        "halfling": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/halfling.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small."
+        ]
+      },
+      {
+        "name": "Lucky",
+        "entries": [
+          "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Brave",
+        "entries": [
+          "You have advantage on saving throws against being {@condition frightened}."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Halfling Nimbleness",
+        "entries": [
+          "You can move through the space of any creature that is of a size larger than yours."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Child of the Wood",
+        "entries": [
+          "You know the {@spell druidcraft} cantrip. When you reach 3rd level, you can cast the {@spell entangle} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell spike growth} spell once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Timberwalk",
+        "entries": [
+          "Ability checks made to track you have disadvantage, and you can move across {@quickref difficult terrain||3} made of nonmagical plants and undergrowth without expending extra movement."
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Halfling (Mark of Healing)",
+    "source": "PHB",
+    "page": 26,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "S"
+    ],
+    "speed": 25,
+    "ability": [
+      {
+        "dex": 2
+      },
+      {
+        "wis": 1
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 31,
+      "heightMod": "2d4",
+      "baseWeight": 35
+    },
+    "age": {
+      "mature": 20,
+      "max": 250
+    },
+    "languageProficiencies": [
+      {
+        "common": true,
+        "halfling": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/halfling.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small."
+        ]
+      },
+      {
+        "name": "Lucky",
+        "entries": [
+          "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Brave",
+        "entries": [
+          "You have advantage on saving throws against being {@condition frightened}."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Halfling Nimbleness",
+        "entries": [
+          "You can move through the space of any creature that is of a size larger than yours."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Medical Intuition",
+        "entries": [
+          "When you make a Wisdom ({@skill Medicine}) check or an ability check using an {@item herbalism kit|phb}, you can roll a {@dice d4} and add the number rolled to the ability check."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Healing Touch",
+        "entries": [
+          "You can cast the {@spell cure wounds} spell with this trait. Starting at 3rd level, you can also cast {@spell lesser restoration} with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spells of the Mark",
+        "entries": [
+          "If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Healing Spells table are added to the spell list of your spellcasting class.",
+          {
+            "type": "table",
+            "caption": "Mark of Healing Spells",
+            "colLabels": [
+              "Spell Level",
+              "Spells"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1st",
+                "{@spell cure wounds}, {@spell healing word}"
+              ],
+              [
+                "2nd",
+                "{@spell lesser restoration}, {@spell prayer of healing}"
+              ],
+              [
+                "3rd",
+                "{@spell aura of vitality}, {@spell mass healing word}"
+              ],
+              [
+                "4th",
+                "{@spell aura of purity}, {@spell aura of life}"
+              ],
+              [
+                "5th",
+                "{@spell greater restoration}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Halfling (Mark of Hospitality)",
+    "source": "PHB",
+    "page": 26,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "S"
+    ],
+    "speed": 25,
+    "ability": [
+      {
+        "dex": 2
+      },
+      {
+        "cha": 1
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 31,
+      "heightMod": "2d4",
+      "baseWeight": 35
+    },
+    "age": {
+      "mature": 20,
+      "max": 250
+    },
+    "languageProficiencies": [
+      {
+        "common": true,
+        "halfling": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/halfling.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small."
+        ]
+      },
+      {
+        "name": "Lucky",
+        "entries": [
+          "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Brave",
+        "entries": [
+          "You have advantage on saving throws against being {@condition frightened}."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Halfling Nimbleness",
+        "entries": [
+          "You can move through the space of any creature that is of a size larger than yours."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Ever Hospitable",
+        "entries": [
+          "When you make a Charisma ({@skill Persuasion}) check or an ability check involving {@item brewer's supplies|PHB} or {@item cook's utensils|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Innkeeper's Magic",
+        "entries": [
+          "You know the {@spell prestidigitation} cantrip. You can also cast the {@spell purify food and drink} and {@spell unseen servant} spells with this trait. Once you cast either spell with this trait, you can't cast that spell with it again until you finish long rest. Charisma is your spellcasting ability for these spells."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spells of the Mark",
+        "entries": [
+          "If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Hospitality Spells table are added to the spell list of your spellcasting class.",
+          {
+            "type": "table",
+            "caption": "Mark of Hospitality Spells",
+            "colLabels": [
+              "Spell Level",
+              "Spells"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1st",
+                "{@spell goodberry}, {@spell sleep}"
+              ],
+              [
+                "2nd",
+                "{@spell aid}, {@spell calm emotions}"
+              ],
+              [
+                "3rd",
+                "{@spell create food and water}, {@spell Leomund's tiny hut}"
+              ],
+              [
+                "4th",
+                "{@spell aura of purity}, {@spell Mordenkainen's private sanctum}"
+              ],
+              [
+                "5th",
+                "{@spell hallow}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Halfling (Stout)",
+    "source": "PHB",
+    "page": 26,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "S"
+    ],
+    "speed": 25,
+    "ability": [
+      {
+        "dex": 2
+      },
+      {
+        "con": 1
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 31,
+      "heightMod": "2d4",
+      "baseWeight": 35
+    },
+    "age": {
+      "mature": 20,
+      "max": 250
+    },
+    "languageProficiencies": [
+      {
+        "common": true,
+        "halfling": true
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/halfling.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small."
+        ]
+      },
+      {
+        "name": "Lucky",
+        "entries": [
+          "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Brave",
+        "entries": [
+          "You have advantage on saving throws against being {@condition frightened}."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Halfling Nimbleness",
+        "entries": [
+          "You can move through the space of any creature that is of a size larger than yours."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Stout Resilience",
+        "entries": [
+          "You have advantage on saving throws against poison, and you have resistance against poison damage."
         ],
         "type": "entries"
       }
@@ -2518,7 +6480,530 @@
     "hasFluffImages": true
   },
   {
-    "name": "Human",
+    "name": "Human (Mark of Handling)",
+    "source": "PHB",
+    "page": 29,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "heightAndWeight": {
+      "baseHeight": 56,
+      "heightMod": "2d10",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "languageProficiencies": [
+      {
+        "common": true,
+        "anyStandard": 1
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/human.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Humans reach adulthood in their late teens and live less than a century."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+        ]
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Wild Intuition",
+        "entries": [
+          "When you make a Wisdom ({@skill Animal Handling}) or Intelligence ({@skill Nature}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Primal Connection",
+        "entries": [
+          "You can cast the {@spell animal friendship} and {@spell speak with animals} spells with this trait, requiring no material component. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a short or long rest. Wisdom is your spellcasting ability for these spells."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "The Bigger They Are",
+        "entries": [
+          "Starting at 3rd level, you can target a beast or monstrosity when you cast {@spell animal friendship} or {@spell speak with animals}, provided the creature's Intelligence score is 3 or lower."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spells of the Mark",
+        "entries": [
+          "If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Handling Spells table are added to the spell list of your spellcasting class.",
+          {
+            "type": "table",
+            "caption": "Mark of Handling Spells",
+            "colLabels": [
+              "Spell Level",
+              "Spells"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1st",
+                "{@spell animal friendship}, {@spell speak with animals}"
+              ],
+              [
+                "2nd",
+                "{@spell beast sense}, {@spell calm emotions}"
+              ],
+              [
+                "3rd",
+                "{@spell beacon of hope}, {@spell conjure animals}"
+              ],
+              [
+                "4th",
+                "{@spell aura of life}, {@spell dominate beast}"
+              ],
+              [
+                "5th",
+                "{@spell awaken}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "ability": [
+      {
+        "wis": 2,
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "cha"
+          ],
+          "count": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "Human (Mark of Making)",
+    "source": "PHB",
+    "page": 29,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "heightAndWeight": {
+      "baseHeight": 56,
+      "heightMod": "2d10",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "languageProficiencies": [
+      {
+        "common": true,
+        "anyStandard": 1
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/human.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Humans reach adulthood in their late teens and live less than a century."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+        ]
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Artisan's Intuition",
+        "entries": [
+          "When you make an {@skill Arcana} check or an ability check involving {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}, you can roll a {@dice d4} and add the number rolled to the ability check."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Maker's Gift",
+        "entries": [
+          "You gain proficiency with one type of {@item artisan's tools|PHB} of your choice."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spellsmith",
+        "entries": [
+          "You know the {@spell mending} cantrip. You can also cast the {@spell magic weapon} spell with this trait. When you do so, the spell lasts for 1 hour and doesn't require {@status concentration}. Once you cast the spell with this trait, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for these spells."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spells of the Mark",
+        "entries": [
+          "If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Making Spells table are added to the spell list of your spellcasting class.",
+          {
+            "type": "table",
+            "caption": "Mark of Making Spells",
+            "colLabels": [
+              "Spell Level",
+              "Spells"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1st",
+                "{@spell identify}, {@spell Tenser's floating disk}"
+              ],
+              [
+                "2nd",
+                "{@spell continual flame}, {@spell magic weapon}"
+              ],
+              [
+                "3rd",
+                "{@spell conjure barrage}, {@spell elemental weapon}"
+              ],
+              [
+                "4th",
+                "{@spell fabricate}, {@spell stone shape}"
+              ],
+              [
+                "5th",
+                "{@spell creation}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "ability": [
+      {
+        "int": 2,
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "wis",
+            "cha"
+          ],
+          "count": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "Human (Mark of Passage)",
+    "source": "PHB",
+    "page": 29,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "heightAndWeight": {
+      "baseHeight": 56,
+      "heightMod": "2d10",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "languageProficiencies": [
+      {
+        "common": true,
+        "anyStandard": 1
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/human.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Humans reach adulthood in their late teens and live less than a century."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+        ]
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Courier's Speed",
+        "entries": [
+          "Your base walking speed increases to 35 feet."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Intuitive Motion",
+        "entries": [
+          "When you make a Dexterity ({@skill Acrobatics}) check or any ability check to operate or maintain a {@filter land vehicle|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (land)}, you can roll a {@dice d4} and add the number rolled to the ability check."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Magical Passage",
+        "entries": [
+          "You can cast the {@spell misty step} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Dexterity is your spellcasting ability for this spell."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spells of the Mark",
+        "entries": [
+          "If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Passage Spells table are added to the spell list of your spellcasting class.",
+          {
+            "type": "table",
+            "caption": "Mark of Passage Spells",
+            "colLabels": [
+              "Spell Level",
+              "Spells"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1st",
+                "{@spell expeditious retreat}, {@spell jump}"
+              ],
+              [
+                "2nd",
+                "{@spell misty step}, {@spell pass without trace}"
+              ],
+              [
+                "3rd",
+                "{@spell blink}, {@spell phantom steed}"
+              ],
+              [
+                "4th",
+                "{@spell dimension door}, {@spell freedom of movement}"
+              ],
+              [
+                "5th",
+                "{@spell teleportation circle}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "ability": [
+      {
+        "dex": 2,
+        "choose": {
+          "from": [
+            "str",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "count": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "Human (Mark of Sentinel)",
+    "source": "PHB",
+    "page": 29,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "heightAndWeight": {
+      "baseHeight": 56,
+      "heightMod": "2d10",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "languageProficiencies": [
+      {
+        "common": true,
+        "anyStandard": 1
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/human.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Humans reach adulthood in their late teens and live less than a century."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+        ]
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Sentinel's Intuition",
+        "entries": [
+          "When you make a Wisdom ({@skill Insight}) or Wisdom ({@skill Perception}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Guardian's Shield",
+        "entries": [
+          "You can cast the {@spell shield} spell once with this trait, and you regain the ability to cast it after you finish a long rest. Wisdom is your spellcasting ability for this spell."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Vigilant Guardian",
+        "entries": [
+          "When a creature you can see within 5 feet of you is hit by an attack roll, you can use your reaction to swap places with that creature, and you are hit by the attack instead. Once you use this trait, you can't do so again until you finish a long rest."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spells of the Mark",
+        "entries": [
+          "If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Sentinel Spells table are added to the spell list of your spellcasting class.",
+          {
+            "type": "table",
+            "caption": "Mark of Sentinel Spells",
+            "colLabels": [
+              "Spell Level",
+              "Spells"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1st",
+                "{@spell compelled duel}, {@spell shield of faith}"
+              ],
+              [
+                "2nd",
+                "{@spell warding bond}, {@spell zone of truth}"
+              ],
+              [
+                "3rd",
+                "{@spell counterspell}, {@spell protection from energy}"
+              ],
+              [
+                "4th",
+                "{@spell death ward}, {@spell guardian of faith}"
+              ],
+              [
+                "5th",
+                "{@spell Bigby's hand}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "ability": [
+      {
+        "con": 2,
+        "wis": 1
+      }
+    ]
+  },
+  {
+    "name": "Human (undefined)",
     "source": "PHB",
     "page": 29,
     "srd": true,
@@ -2571,7 +7056,236 @@
       }
     ],
     "hasFluff": true,
-    "hasFluffImages": true
+    "hasFluffImages": true,
+    "ability": [
+      {
+        "str": 1,
+        "dex": 1,
+        "con": 1,
+        "int": 1,
+        "wis": 1,
+        "cha": 1
+      }
+    ]
+  },
+  {
+    "name": "Human (Variant; Mark of Finding)",
+    "source": "PHB",
+    "page": 29,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "heightAndWeight": {
+      "baseHeight": 56,
+      "heightMod": "2d10",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "languageProficiencies": [
+      {
+        "common": true,
+        "anyStandard": 1
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/human.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Humans reach adulthood in their late teens and live less than a century."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+        ]
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Darkvision",
+        "entries": [
+          "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Hunter's Intuition",
+        "entries": [
+          "When you make a Wisdom ({@skill Perception}) or Wisdom ({@skill Survival}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Finder's Magic",
+        "entries": [
+          "You can cast the {@spell hunter's mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell locate object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Goblin."
+        ],
+        "data": {
+          "overwrite": "Languages"
+        }
+      },
+      {
+        "type": "entries",
+        "name": "Spells of the Mark",
+        "entries": [
+          "If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Finding Spells table are added to the spell list of your spellcasting class.",
+          {
+            "type": "table",
+            "caption": "Mark of Finding Spells",
+            "colLabels": [
+              "Spell Level",
+              "Spells"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1st",
+                "{@spell faerie fire}, {@spell longstrider}"
+              ],
+              [
+                "2nd",
+                "{@spell locate animals or plants}, {@spell locate object}"
+              ],
+              [
+                "3rd",
+                "{@spell clairvoyance}, {@spell speak with plants}"
+              ],
+              [
+                "4th",
+                "{@spell divination}, {@spell locate creature}"
+              ],
+              [
+                "5th",
+                "{@spell commune with nature}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "ability": [
+      {
+        "con": 1,
+        "wis": 2
+      }
+    ]
+  },
+  {
+    "name": "Human (Variant)",
+    "source": "PHB",
+    "page": 29,
+    "srd": true,
+    "basicRules": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "heightAndWeight": {
+      "baseHeight": 56,
+      "heightMod": "2d10",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "languageProficiencies": [
+      {
+        "common": true,
+        "anyStandard": 1
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/human.mp3"
+    },
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Humans reach adulthood in their late teens and live less than a century."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+        ]
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Skills",
+        "entries": [
+          "You gain proficiency in one skill of your choice."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Feat",
+        "entries": [
+          "You gain one {@5etools feat|feats.html} of your choice."
+        ],
+        "type": "entries"
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "count": 2
+        }
+      }
+    ]
   },
   {
     "name": "Kalashtar",
@@ -3638,7 +8352,7 @@
     "hasFluffImages": true
   },
   {
-    "name": "Shifter",
+    "name": "Shifter (Beasthide)",
     "source": "ERLW",
     "page": 33,
     "reprintedAs": [
@@ -3714,10 +8428,336 @@
         "entries": [
           "You can speak, read, and write Common."
         ]
+      },
+      {
+        "type": "entries",
+        "name": "Natural Athlete",
+        "entries": [
+          "You have proficiency in the {@skill Athletics} skill."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Shifting Feature",
+        "entries": [
+          "Whenever you shift, you gain {@dice 1d6} additional temporary hit points. While shifted, you have a +1 bonus to your Armor Class."
+        ]
       }
     ],
     "hasFluff": true,
-    "hasFluffImages": true
+    "hasFluffImages": true,
+    "ability": [
+      {
+        "con": 2,
+        "str": 1
+      }
+    ]
+  },
+  {
+    "name": "Shifter (Longtooth)",
+    "source": "ERLW",
+    "page": 33,
+    "reprintedAs": [
+      "Shifter|MPMM"
+    ],
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "heightAndWeight": {
+      "baseHeight": 54,
+      "heightMod": "2d8",
+      "baseWeight": 90,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 10,
+      "max": 70
+    },
+    "darkvision": 60,
+    "languageProficiencies": [
+      {
+        "common": true
+      }
+    ],
+    "entries": [
+      {
+        "type": "entries",
+        "name": "Age",
+        "entries": [
+          "Shifters are quick to mature both physically and emotionally, reaching young adulthood at age 10. They rarely live to be more than 70 years old."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Alignment",
+        "entries": [
+          "Shifters tend toward neutrality, being more focused on survival than concepts of good and evil. A love of personal freedom can drive shifters toward chaotic alignments."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Your size is Medium."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Speed",
+        "entries": [
+          "Your base walking speed is 30 feet."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Darkvision",
+        "entries": [
+          "You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Shifting",
+        "entries": [
+          "As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to your level + your Constitution modifier (minimum of 1 temporary hit point). You also gain additional benefits that depend on your shifter subrace, described below.",
+          "Once you shift, you can't do so again until you finish a short or long rest."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Fierce",
+        "entries": [
+          "You have proficiency in the {@skill Intimidation} skill."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Shifting Feature",
+        "entries": [
+          "While shifted, you can use your elongated fangs to make an unarmed strike as a bonus action. If you hit with your fangs, you can deal piercing damage equal to {@damage 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "ability": [
+      {
+        "str": 2,
+        "dex": 1
+      }
+    ]
+  },
+  {
+    "name": "Shifter (Swiftstride)",
+    "source": "ERLW",
+    "page": 33,
+    "reprintedAs": [
+      "Shifter|MPMM"
+    ],
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "heightAndWeight": {
+      "baseHeight": 54,
+      "heightMod": "2d8",
+      "baseWeight": 90,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 10,
+      "max": 70
+    },
+    "darkvision": 60,
+    "languageProficiencies": [
+      {
+        "common": true
+      }
+    ],
+    "entries": [
+      {
+        "type": "entries",
+        "name": "Age",
+        "entries": [
+          "Shifters are quick to mature both physically and emotionally, reaching young adulthood at age 10. They rarely live to be more than 70 years old."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Alignment",
+        "entries": [
+          "Shifters tend toward neutrality, being more focused on survival than concepts of good and evil. A love of personal freedom can drive shifters toward chaotic alignments."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Your size is Medium."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Speed",
+        "entries": [
+          "Your base walking speed is 30 feet."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Darkvision",
+        "entries": [
+          "You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Shifting",
+        "entries": [
+          "As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to your level + your Constitution modifier (minimum of 1 temporary hit point). You also gain additional benefits that depend on your shifter subrace, described below.",
+          "Once you shift, you can't do so again until you finish a short or long rest."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Graceful",
+        "entries": [
+          "You have proficiency in the {@skill Acrobatics} skill."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Shifting Feature",
+        "entries": [
+          "While shifted, your walking speed increases by 10 feet. Additionally, you can move up to 10 feet as a reaction when a creature ends its turn within 5 feet of you. This reactive movement doesn't provoke opportunity attacks."
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "ability": [
+      {
+        "dex": 2,
+        "cha": 1
+      }
+    ]
+  },
+  {
+    "name": "Shifter (Wildhunt)",
+    "source": "ERLW",
+    "page": 33,
+    "reprintedAs": [
+      "Shifter|MPMM"
+    ],
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "heightAndWeight": {
+      "baseHeight": 54,
+      "heightMod": "2d8",
+      "baseWeight": 90,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 10,
+      "max": 70
+    },
+    "darkvision": 60,
+    "languageProficiencies": [
+      {
+        "common": true
+      }
+    ],
+    "entries": [
+      {
+        "type": "entries",
+        "name": "Age",
+        "entries": [
+          "Shifters are quick to mature both physically and emotionally, reaching young adulthood at age 10. They rarely live to be more than 70 years old."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Alignment",
+        "entries": [
+          "Shifters tend toward neutrality, being more focused on survival than concepts of good and evil. A love of personal freedom can drive shifters toward chaotic alignments."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Your size is Medium."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Speed",
+        "entries": [
+          "Your base walking speed is 30 feet."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Darkvision",
+        "entries": [
+          "You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Shifting",
+        "entries": [
+          "As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to your level + your Constitution modifier (minimum of 1 temporary hit point). You also gain additional benefits that depend on your shifter subrace, described below.",
+          "Once you shift, you can't do so again until you finish a short or long rest."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Natural Tracker",
+        "entries": [
+          "You have proficiency in the {@skill Survival} skill."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Shifting Feature",
+        "entries": [
+          "While shifted, you have advantage on Wisdom checks, and no creature within 30 feet of you can make an attack roll with advantage against you, unless you're {@condition incapacitated}."
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "ability": [
+      {
+        "wis": 2,
+        "dex": 1
+      }
+    ]
   },
   {
     "name": "Skeleton",
@@ -3905,7 +8945,7 @@
     "hasFluffImages": true
   },
   {
-    "name": "Tiefling",
+    "name": "Tiefling (undefined)",
     "source": "PHB",
     "page": 42,
     "srd": true,
@@ -4014,6 +9054,568 @@
           "You can speak, read, and write Common and Infernal."
         ],
         "type": "entries"
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Tiefling (Variant; Devil's Tongue)",
+    "source": "PHB",
+    "page": 42,
+    "srd": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "cha": 2,
+        "int": 1
+      },
+      {
+        "int": 1,
+        "choose": {
+          "from": [
+            "dex",
+            "cha"
+          ],
+          "count": 1,
+          "amount": 2
+        }
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 57,
+      "heightMod": "2d8",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "infernal": true
+      }
+    ],
+    "resist": [
+      "fire"
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/tiefling.mp3"
+    },
+    "additionalSpells": [
+      {
+        "innate": {
+          "3": {
+            "daily": {
+              "1": [
+                "hellish rebuke#2"
+              ]
+            }
+          },
+          "5": {
+            "daily": {
+              "1": [
+                "darkness"
+              ]
+            }
+          }
+        },
+        "ability": "cha",
+        "known": {
+          "1": [
+            "thaumaturgy#c"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Tieflings mature at the same rate as humans but live a few years longer."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Tieflings are about the same size and build as humans. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Hellish Resistance",
+        "entries": [
+          "You have resistance to fire damage."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Infernal Legacy",
+        "entries": [
+          "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Infernal."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Appearance",
+        "entries": [
+          "Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose {@dice 1d4+1} of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Devil's Tongue",
+        "entries": [
+          "You know the {@spell vicious mockery} cantrip. When you reach 3rd level, you can cast the {@spell charm person} spell as a 2nd-level spell once with this trait. When you reach 5th level, you can cast the {@spell enthrall} spell once with this trait. You must finish a long rest to cast these spells once again with this trait. Charisma is your spellcasting ability for them. This trait replaces the Infernal Legacy trait."
+        ],
+        "data": {
+          "overwrite": "Infernal Legacy"
+        }
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Tiefling (Variant; Hellfire)",
+    "source": "PHB",
+    "page": 42,
+    "srd": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "cha": 2,
+        "int": 1
+      },
+      {
+        "int": 1,
+        "choose": {
+          "from": [
+            "dex",
+            "cha"
+          ],
+          "count": 1,
+          "amount": 2
+        }
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 57,
+      "heightMod": "2d8",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "infernal": true
+      }
+    ],
+    "resist": [
+      "fire"
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/tiefling.mp3"
+    },
+    "additionalSpells": [
+      {
+        "innate": {
+          "3": {
+            "daily": {
+              "1": [
+                "hellish rebuke#2"
+              ]
+            }
+          },
+          "5": {
+            "daily": {
+              "1": [
+                "darkness"
+              ]
+            }
+          }
+        },
+        "ability": "cha",
+        "known": {
+          "1": [
+            "thaumaturgy#c"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Tieflings mature at the same rate as humans but live a few years longer."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Tieflings are about the same size and build as humans. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Hellish Resistance",
+        "entries": [
+          "You have resistance to fire damage."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Infernal Legacy",
+        "entries": [
+          "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Infernal."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Appearance",
+        "entries": [
+          "Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose {@dice 1d4+1} of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Hellfire",
+        "entries": [
+          "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell burning hands} spell once per day as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the {@spell darkness} spell; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+        ],
+        "data": {
+          "overwrite": "Infernal Legacy"
+        }
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Tiefling (Variant; Infernal Legacy)",
+    "source": "PHB",
+    "page": 42,
+    "srd": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "cha": 2,
+        "int": 1
+      },
+      {
+        "int": 1,
+        "choose": {
+          "from": [
+            "dex",
+            "cha"
+          ],
+          "count": 1,
+          "amount": 2
+        }
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 57,
+      "heightMod": "2d8",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "infernal": true
+      }
+    ],
+    "resist": [
+      "fire"
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/tiefling.mp3"
+    },
+    "additionalSpells": [
+      {
+        "innate": {
+          "3": {
+            "daily": {
+              "1": [
+                "hellish rebuke#2"
+              ]
+            }
+          },
+          "5": {
+            "daily": {
+              "1": [
+                "darkness"
+              ]
+            }
+          }
+        },
+        "ability": "cha",
+        "known": {
+          "1": [
+            "thaumaturgy#c"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Tieflings mature at the same rate as humans but live a few years longer."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Tieflings are about the same size and build as humans. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Hellish Resistance",
+        "entries": [
+          "You have resistance to fire damage."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Infernal Legacy",
+        "entries": [
+          "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Infernal."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Appearance",
+        "entries": [
+          "Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose {@dice 1d4+1} of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
+        ],
+        "type": "entries"
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Tiefling (Variant; Winged)",
+    "source": "PHB",
+    "page": 42,
+    "srd": true,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "cha": 2,
+        "int": 1
+      },
+      {
+        "int": 1,
+        "choose": {
+          "from": [
+            "dex",
+            "cha"
+          ],
+          "count": 1,
+          "amount": 2
+        }
+      }
+    ],
+    "heightAndWeight": {
+      "baseHeight": 57,
+      "heightMod": "2d8",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "darkvision": 60,
+    "traitTags": [
+      "Uncommon Race"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "infernal": true
+      }
+    ],
+    "resist": [
+      "fire"
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/tiefling.mp3"
+    },
+    "additionalSpells": [
+      {
+        "innate": {
+          "3": {
+            "daily": {
+              "1": [
+                "hellish rebuke#2"
+              ]
+            }
+          },
+          "5": {
+            "daily": {
+              "1": [
+                "darkness"
+              ]
+            }
+          }
+        },
+        "ability": "cha",
+        "known": {
+          "1": [
+            "thaumaturgy#c"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      {
+        "name": "Age",
+        "type": "entries",
+        "entries": [
+          "Tieflings mature at the same rate as humans but live a few years longer."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Size",
+        "entries": [
+          "Tieflings are about the same size and build as humans. Your size is Medium."
+        ]
+      },
+      {
+        "name": "Darkvision",
+        "entries": [
+          "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Hellish Resistance",
+        "entries": [
+          "You have resistance to fire damage."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Infernal Legacy",
+        "entries": [
+          "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Infernal."
+        ],
+        "type": "entries"
+      },
+      {
+        "name": "Appearance",
+        "entries": [
+          "Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose {@dice 1d4+1} of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
+        ],
+        "type": "entries"
+      },
+      {
+        "type": "entries",
+        "name": "Winged",
+        "entries": [
+          "You have bat-like wings sprouting from your shoulder blades. You have a flying speed of 30 feet while you aren't wearing heavy armor."
+        ],
+        "data": {
+          "overwrite": "Infernal Legacy"
+        }
       }
     ],
     "hasFluff": true,
