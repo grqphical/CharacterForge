@@ -1,16 +1,27 @@
 export interface Race {
     name: string;
-    description: string;
-    properties: {
-        Category: string;
-        Expansion: number;
-        Size?: undefined;
-        Speed?: undefined;
-        "data-List"?: undefined;
-        "data-builderImage"?: undefined;
-        "data-Ability Score Increase"?: undefined;
-        "data-Ability Score Choice"?: undefined;
+    source: string;
+    page: number;
+    size: string[];
+    speed: {
+        walk?: number;
+        fly?: number;
     };
-    publisher: string;
-    book: string;
+    ability: Array<{
+        str?: number;
+        dex?: number;
+        con?: number;
+        int?: number;
+        wis?: number;
+        cha?: number;
+    }>;
+    traitTags: string[];
+    languageProficiencies: Array<{
+        [key: string]: boolean;
+    }>;
+    entries: Array<{
+        name: string;
+        entries: string[];
+        type: string;
+    }>;
 }

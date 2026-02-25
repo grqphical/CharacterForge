@@ -24,7 +24,7 @@ let character = {} as Character
             <div class="flex flex-col gap-1">
                 <label for="race" class="text-xl">Race:</label>
                 <select name="race" class="bg-gray-200 p-1 rounded-md w-1/3" required>
-                    <option v-for="race in races" value="{{ race.name }}">{{ race.name }}</option>
+                    <option v-for="race in races" value="{{ race.name }}">{{ `${race.name} (${race.source})` }}</option>
                 </select>
             </div>
             <button type="submit"
