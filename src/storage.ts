@@ -22,7 +22,7 @@ export const useCharacterStore = defineStore('character', {
         },
         deleteCharacter(id: number) {
             this.characters.splice(id, 1)
-
+            this.saveCharacters()
         }
     }
 })
