@@ -1,25 +1,28 @@
+import { defineStore } from "pinia";
 import type { Character } from "./models";
 
-export let characters = [] as Array<Character>;
+export const useCharacterStore = defineStore('character', {
+    state: () => {
+        let savedCharacters = localStorage.getItem("characters")
+        if (savedCharacters === null) {
+            return { characters: [] as Array<Character> }
+        }
+        return { characters: JSON.parse(savedCharacters) as Array<Character> }
+    },
+    actions: {
+        addCharacter(character: Character) {
+            if (character === null) {
+                return;
+            }
+            this.characters.push(character);
+            this.saveCharacters()
+        },
+        saveCharacters() {
+            localStorage.setItem("characters", JSON.stringify(this.characters))
+        },
+        deleteCharacter(id: number) {
+            this.characters.splice(id, 1)
 
-function saveCharacters() {
-    localStorage.setItem("characters", JSON.stringify(characters))
-}
-
-export function SaveCharacter(character: Character) {
-    if (character === null) {
-        return;
+        }
     }
-    characters.push(character);
-    saveCharacters();
-}
-
-export function LoadCharacters() {
-    let savedCharacters = localStorage.getItem("characters")
-    if (savedCharacters !== null) {
-        characters = JSON.parse(savedCharacters);
-        console.log("Loaded characters from storage")
-    } else {
-        console.log("No characters in local storage")
-    }
-}
+})

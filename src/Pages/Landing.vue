@@ -1,15 +1,33 @@
 <script setup lang="ts">
-import { characters, LoadCharacters } from "../storage"
-LoadCharacters()
+import { useCharacterStore } from "../storage"
+const characterStore = useCharacterStore();
+
+const handleDeleteButton = (id: number) => {
+    if (!confirm("Are you sure you wish to delete this character")) {
+        return;
+    }
+    characterStore.deleteCharacter(id)
+}
 </script>
 
 <template>
     <div class="w-140 mh-80 m-auto p-4 mt-24 rounded-md shadow-xl bg-white flex flex-col">
-        <h1 class="text-4xl font-bold">5e Character Creator</h1>
-        <h2 class="text-3xl" v-if="characters.length !== 0">Characters:</h2>
-        <div class="py-4">
-            <div v-if="characters.length === 0">Hmm no characters have been created...</div>
-            <div v-for="character in characters">{{ character.name }}</div>
+        <h1 class="text-5xl mb-10 font-bold">5e Character Creator</h1>
+        <h2 class="text-3xl" v-if="characterStore.characters.length !== 0">Characters:</h2>
+        <div class="py-4 flex flex-col gap-2 min-h-64">
+            <div v-if="characterStore.characters.length === 0">Hmm no characters have been created...</div>
+            <div v-for="(character, i) in characterStore.characters"
+                class="px-2 py-3 bg-gray-100 rounded md flex flex-row items-center gap-2">
+                <p class="text-lg">{{ character.name }}</p>
+                <RouterLink :to="`/character-sheet/${i}`"
+                    class="text-lg px-3 py-2 bg-blue-500 rounded-md cursor-pointer hover:bg-blue-600 ml-auto text-white">
+                    Edit
+                </RouterLink>
+                <button class="text-lg px-3 py-2 bg-red-500 rounded-md cursor-pointer hover:bg-red-600 text-white"
+                    v-on:click="(_) => handleDeleteButton(i)">
+                    Delete
+                </button>
+            </div>
         </div>
         <div class="flex flex-row gap-2 mt-auto">
             <RouterLink to="/create" class="text-lg px-3 py-2 bg-gray-200 rounded-md cursor-pointer hover:bg-gray-300">

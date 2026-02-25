@@ -2,7 +2,11 @@
 import { reactive } from 'vue' // Import reactive
 import { Class, type Character, Alignment } from "../models"
 import races from "../Data/races.json"
-import { SaveCharacter } from "../storage"
+import { useCharacterStore } from "../storage"
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+const charactersStore = useCharacterStore();
 
 const character = reactive<Character>({
     name: '',
@@ -16,7 +20,10 @@ const character = reactive<Character>({
 const handleSubmit = (e: Event) => {
     e.preventDefault()
     // character is now a reactive proxy, SaveCharacter will get the raw values
-    SaveCharacter(character);
+    charactersStore.addCharacter(character)
+    const idx = charactersStore.characters.length - 1;
+
+    router.push(`/character-sheet/${idx}`)
 }
 </script>
 

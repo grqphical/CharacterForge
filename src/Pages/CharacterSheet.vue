@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
-import { characters, LoadCharacters } from '../storage';
-LoadCharacters()
+import { useCharacterStore } from '../storage';
+
+const characterStore = useCharacterStore();
 
 const route = useRoute()
 const id = parseInt(route.params.id?.toString()!)
 
-const character = characters[id];
-
-console.log(character)
+const character = characterStore.characters[id];
 </script>
 
 <template>

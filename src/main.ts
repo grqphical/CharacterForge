@@ -6,6 +6,7 @@ import Landing from "./Pages/Landing.vue"
 import { createWebHistory, createRouter } from 'vue-router'
 import CharacterBuilder from './Pages/CharacterBuilder.vue'
 import CharacterSheet from './Pages/CharacterSheet.vue'
+import { createPinia } from 'pinia'
 
 const routes = [
     { path: "/", component: Landing },
@@ -19,4 +20,9 @@ export const router = createRouter({
 
 })
 
-createApp(App).use(router).mount('#app')
+const pinia = createPinia()
+
+createApp(App)
+    .use(router)
+    .use(pinia)
+    .mount('#app')
