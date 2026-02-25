@@ -1,4 +1,4 @@
-enum Class {
+export enum Class {
     Artificer = "Artificer",
     Barbarian = "Barbarian",
     Bard = "Bard",
@@ -36,7 +36,7 @@ enum Dice {
 interface Attack {
     name: string
     attack_bonus: number
-    damage: string 
+    damage: string
 }
 
 interface Spell {
@@ -93,7 +93,7 @@ export interface Character {
     initiative: number
     speed: number
     armor_class: number
-    
+
 
     strength: number
     dexterity: number
