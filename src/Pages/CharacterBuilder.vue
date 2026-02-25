@@ -9,7 +9,8 @@ const character = reactive<Character>({
     level: 1,
     class: Class.Fighter,
     race: races[0]?.name || '',
-    alignment: Alignment.TrueNeutral
+    alignment: Alignment.TrueNeutral,
+    xp: 0,
 } as Character)
 
 const handleSubmit = (e: Event) => {
