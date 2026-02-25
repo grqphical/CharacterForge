@@ -14,6 +14,18 @@ export enum Class {
     Wizard = "Wizard"
 }
 
+export enum Alignment {
+    LawfulGood = "Lawful Good",
+    NeutralGood = "Neutral Good",
+    ChaoticGood = "Chaotic Good",
+    LawfulNeutral = "Lawful Neutral",
+    TrueNeutral = "True Neutral",
+    ChaoticNeutral = "Chaotic Neutral",
+    LawfulEvil = "Lawful Evil",
+    NeutralEvil = "Neutral Evil",
+    ChaoticEvil = "Chaotic Evil"
+}
+
 enum Ability {
     STR = "STR",
     DEX = "DEX",
@@ -71,7 +83,7 @@ export interface Character {
     background: string
     level: number
     xp: number | null
-    alignment: string
+    alignment: Alignment
 
     age: number
     height: string

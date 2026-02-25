@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { characters } from "../storage"
+import { characters, LoadCharacters } from "../storage"
+LoadCharacters()
 </script>
 
 <template>
