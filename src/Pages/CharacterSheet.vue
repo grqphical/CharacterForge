@@ -49,6 +49,9 @@ const abilityToModifierLoookup = new Map<number, number>([
 
 const getModifierFromAbility = (abilityScore: number): string => {
     const modifier = abilityToModifierLoookup.get(abilityScore)
+    if (modifier === undefined) {
+        console.error("could not lookup modifier for", abilityScore)
+    }
     const sign = Math.sign(modifier!) === -1 ? "-" : "+"
     return `${sign}${Math.abs(modifier!)}`
 }
@@ -117,44 +120,44 @@ const exportCharacter = () => {
         <div class="flex flex-col gap-3">
             <div class="w-25 bg-white rounded-md shadow-xl p-2 flex flex-col justify-center items-center">
                 <p class="text-3xl border-2 rounded aspect-square text-center p-0.5 mb-1">{{
-                    getModifierFromAbility(character?.stats.strength!) }}
+                    getModifierFromAbility(character?.stats.str!) }}
                 </p>
-                <p class="border aspect-square text-center rounded">{{ character?.stats.strength }}</p>
+                <p class="border aspect-square text-center rounded">{{ character?.stats.str }}</p>
                 <p class="font-bold">STR</p>
             </div>
             <div class="w-25 bg-white rounded-md shadow-xl p-2 flex flex-col justify-center items-center">
                 <p class="text-3xl border-2 rounded aspect-square text-center p-0.5 mb-1">{{
-                    getModifierFromAbility(character?.stats.dexterity!) }}
+                    getModifierFromAbility(character?.stats.dex!) }}
                 </p>
-                <p class="border aspect-square text-center rounded">{{ character?.stats.dexterity }}</p>
+                <p class="border aspect-square text-center rounded">{{ character?.stats.dex }}</p>
                 <p class="font-bold">DEX</p>
             </div>
             <div class="w-25 bg-white rounded-md shadow-xl p-2 flex flex-col justify-center items-center">
                 <p class="text-3xl border-2 rounded aspect-square text-center p-0.5 mb-1">{{
-                    getModifierFromAbility(character?.stats.constitution!) }}
+                    getModifierFromAbility(character?.stats.con!) }}
                 </p>
-                <p class="border aspect-square text-center rounded">{{ character?.stats.constitution }}</p>
+                <p class="border aspect-square text-center rounded">{{ character?.stats.con }}</p>
                 <p class="font-bold">CON</p>
             </div>
             <div class="w-25 bg-white rounded-md shadow-xl p-2 flex flex-col justify-center items-center">
                 <p class="text-3xl border-2 rounded aspect-square text-center p-0.5 mb-1">{{
-                    getModifierFromAbility(character?.stats.intelligence!) }}
+                    getModifierFromAbility(character?.stats.int!) }}
                 </p>
-                <p class="border aspect-square text-center rounded">{{ character?.stats.intelligence }}</p>
+                <p class="border aspect-square text-center rounded">{{ character?.stats.int }}</p>
                 <p class="font-bold">INT</p>
             </div>
             <div class="w-25 bg-white rounded-md shadow-xl p-2 flex flex-col justify-center items-center">
                 <p class="text-3xl border-2 rounded aspect-square text-center p-0.5 mb-1">{{
-                    getModifierFromAbility(character?.stats.wisdom!) }}
+                    getModifierFromAbility(character?.stats.wis!) }}
                 </p>
-                <p class="border aspect-square text-center rounded">{{ character?.stats.wisdom }}</p>
+                <p class="border aspect-square text-center rounded">{{ character?.stats.wis }}</p>
                 <p class="font-bold">WIS</p>
             </div>
             <div class="w-25 bg-white rounded-md shadow-xl p-2 flex flex-col justify-center items-center">
                 <p class="text-3xl border-2 rounded aspect-square text-center p-0.5 mb-1">{{
-                    getModifierFromAbility(character?.stats.charisma!) }}
+                    getModifierFromAbility(character?.stats.cha!) }}
                 </p>
-                <p class="border aspect-square text-center rounded">{{ character?.stats.charisma }}</p>
+                <p class="border aspect-square text-center rounded">{{ character?.stats.cha }}</p>
                 <p class="font-bold">CHA</p>
             </div>
 

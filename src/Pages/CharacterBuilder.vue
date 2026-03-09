@@ -15,18 +15,23 @@ const character = reactive<Character>({
     race: races[0]?.name || '',
     alignment: Alignment.TrueNeutral,
     stats: {
-        strength: 8,
-        dexterity: 8,
-        constitution: 8,
-        intelligence: 8,
-        charisma: 8,
-        wisdom: 8,
+        str: 0,
+        dex: 0,
+        con: 0,
+        int: 0,
+        cha: 0,
+        wis: 0,
     },
     xp: 0,
 } as Character)
 
 const handleSubmit = (e: Event) => {
     e.preventDefault()
+
+    Object.entries(preBonusStats).forEach(([stat, value]) => {
+        const key = stat as keyof typeof character.stats
+        character.stats[key] += value
+    })
 
     charactersStore.addCharacter(character)
     const idx = charactersStore.characters.length - 1;
@@ -45,8 +50,18 @@ let pointBuyPrices: Record<number, number> = {
     15: 9
 }
 
+let preBonusStats = reactive({
+    str: 8,
+    dex: 8,
+    con: 8,
+    int: 8,
+    cha: 8,
+    wis: 8,
+
+})
+
 const totalSpent = computed(() => {
-    return Object.values(character.stats).reduce((sum, score) => {
+    return Object.values(preBonusStats).reduce((sum, score) => {
         return sum + (pointBuyPrices[score] || 0);
     }, 0);
 });
@@ -54,8 +69,8 @@ const totalSpent = computed(() => {
 const handleAbilityChange = (stat: string, e: Event) => {
     const target = e.target as HTMLInputElement;
     const newValue = parseInt(target.value);
-    const statKey = stat as keyof typeof character.stats;
-    const oldValue = character.stats[statKey];
+    const statKey = stat as keyof typeof preBonusStats
+    const oldValue = preBonusStats[statKey];
 
     const currentCost = pointBuyPrices[oldValue] || 0;
     const newCost = pointBuyPrices[newValue] || 0;
@@ -63,12 +78,38 @@ const handleAbilityChange = (stat: string, e: Event) => {
 
     // Check if current total + the increase fits in the 27 point budget
     if (totalSpent.value + costDifference <= 27) {
-        character.stats[statKey] = newValue;
+        preBonusStats[statKey] = newValue;
     } else {
         // Snap back if over budget
         target.value = oldValue.toString();
     }
 }
+
+const applyRacialBonuses = () => {
+    Object.entries(character.stats).forEach(([keyName]) => {
+        const key = keyName as keyof typeof character.stats;
+        character.stats[key] = 0
+    })
+    const race = character.race;
+    const raceData = races.find((r) => r.name == race);
+    if (raceData?.ability) {
+        raceData.ability.forEach((value) => {
+            Object.entries(value).forEach(([statName, statValue]) => {
+                const stat = statName as keyof typeof character.stats
+                character.stats[stat] = statValue as number
+            })
+        });
+    }
+}
+
+const filteredRacialBonuses = computed(() => {
+    return Object.fromEntries(
+        Object.entries(character.stats).filter(([_, value]) => value !== 0)
+    );
+});
+
+applyRacialBonuses();
+
 </script>
 
 <template>
@@ -92,7 +133,8 @@ const handleAbilityChange = (stat: string, e: Event) => {
 
             <div class="flex flex-col gap-1">
                 <label for="race" class="text-xl">Race:</label>
-                <select v-model="character.race" class="bg-gray-200 p-1 rounded-md w-1/3" required>
+                <select v-model="character.race" class="bg-gray-200 p-1 rounded-md w-1/3" required
+                    @change="applyRacialBonuses">
                     <option v-for="race in races" :value="race.name" :key="race.name">
                         {{ race.name }} ({{ race.source }})
                     </option>
@@ -110,39 +152,40 @@ const handleAbilityChange = (stat: string, e: Event) => {
                 <div id="abilities" class="flex flex-row gap-2 w-1/3">
                     <div class="flex flex-col">
                         <input type="number" name="str" id="str" class="bg-gray-200 p-1 rounded-md w-full"
-                            @input="handleAbilityChange('strength', $event)" :value="character.stats.strength" min="8"
-                            max="15">
+                            @input="handleAbilityChange('str', $event)" :value="preBonusStats.str" min="8" max="15">
                         <label for="str">STR</label>
+
                     </div>
                     <div class="flex flex-col">
                         <input type="number" name="dex" id="dex" class="bg-gray-200 p-1 rounded-md w-full"
-                            @input="handleAbilityChange('dexterity', $event)" :value="character.stats.dexterity" min="8"
-                            max="15">
+                            @input="handleAbilityChange('dex', $event)" :value="preBonusStats.dex" min="8" max="15">
                         <label for="dex">DEX</label>
                     </div>
                     <div class="flex flex-col">
                         <input type="number" name="con" id="con" class="bg-gray-200 p-1 rounded-md w-full"
-                            @input="handleAbilityChange('constitution', $event)" :value="character.stats.constitution"
-                            min="8" max="15">
+                            @input="handleAbilityChange('con', $event)" :value="preBonusStats.con" min="8" max="15">
                         <label for="con">CON</label>
                     </div>
                     <div class="flex flex-col">
                         <input type="number" name="int" id="int" class="bg-gray-200 p-1 rounded-md w-full"
-                            @input="handleAbilityChange('intelligence', $event)" :value="character.stats.intelligence"
-                            min="8" max="15">
+                            @input="handleAbilityChange('int', $event)" :value="preBonusStats.int" min="8" max="15">
                         <label for="int">INT</label>
                     </div>
                     <div class="flex flex-col">
                         <input type="number" name="wis" id="wis" class="bg-gray-200 p-1 rounded-md w-full"
-                            @input="handleAbilityChange('wisdom', $event)" :value="character.stats.wisdom" min="8"
-                            max="15">
+                            @input="handleAbilityChange('wis', $event)" :value="preBonusStats.wis" min="8" max="15">
                         <label for="wis">WIS</label>
                     </div>
                     <div class="flex flex-col">
                         <input type="number" name="cha" id="cha" class="bg-gray-200 p-1 rounded-md w-full"
-                            @input="handleAbilityChange('charisma', $event)" :value="character.stats.charisma" min="8"
-                            max="15">
+                            @input="handleAbilityChange('cha', $event)" :value="preBonusStats.cha" min="8" max="15">
                         <label for="cha">CHA</label>
+                    </div>
+                </div>
+                <h3 class="font-bold text-lg">Racial Bonuses:</h3>
+                <div class="flex flex-row gap-1">
+                    <div v-for="(value, stat) in filteredRacialBonuses" :key="stat">
+                        <p>{{ stat.toUpperCase() }}: {{ value }}</p>
                     </div>
                 </div>
 
