@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import { ref } from "vue"
 import { useCharacterStore } from "../storage"
 const characterStore = useCharacterStore();
+
+const errorMsg = ref("");
 
 const handleDeleteButton = (id: number) => {
     if (!confirm("Are you sure you wish to delete this character")) {
@@ -12,26 +15,44 @@ const handleDeleteButton = (id: number) => {
 const importCharacter = () => {
     const fileInput = document.createElement('input');
     fileInput.type = 'file';
-    fileInput.multiple = false;
+    fileInput.multiple = false
+    fileInput.accept = "application/json"
 
     fileInput.onchange = async (e) => {
         const file = (e.target as HTMLInputElement)?.files?.[0];
         if (!file) return;
 
-        const characterJSON = JSON.parse(await file.text())
-        if (characterJSON._meta.source !== "CharacterForge" || characterJSON._meta.version !== 1) {
-            console.error("Invalid character uploaded")
-            return
+        try {
+            const characterJSON = JSON.parse(await file.text())
+            if (characterJSON._meta.source !== "CharacterForge" || characterJSON._meta.version !== 1) {
+                errorMsg.value = "Failed to import: Invalid JSON character sheet uploaded"
+                return
+            }
+            const character = characterJSON.character
+            characterStore.addCharacter(character)
+        } catch {
+            errorMsg.value = "Failed to import: Non JSON file uploaded"
         }
-        const character = characterJSON.character
-        characterStore.addCharacter(character)
+
+
     };
 
     fileInput.click();
 };
+
+const closeError = () => {
+    errorMsg.value = ""
+}
 </script>
 
 <template>
+    <div class="bg-red-200 p-2 rounded-lg border-3 border-red-400 flex flex-row" v-if="errorMsg.length !== 0">
+        <div class="flex flex-col gap-1">
+            <h1 class="text-red-600 font-bold text-xl">Error</h1>
+            <p class="text-red-600 text-lg">{{ errorMsg }}</p>
+        </div>
+        <button class="ml-auto p-3 text-red-400 font-extrabold cursor-pointer" v-on:click="closeError">✕</button>
+    </div>
     <div class="w-150 mh-90 m-auto p-6 mt-24 rounded-md shadow-xl bg-white flex flex-col">
         <a href="/"><img src="/logo.webp" alt="logo" width="84" height="84"></a>
         <h1 class="text-5xl mb-10 font-bold">CharacterForge</h1>
