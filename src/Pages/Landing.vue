@@ -57,7 +57,7 @@ const closeError = () => {
         <a href="/"><img src="/logo.webp" alt="logo" width="84" height="84"></a>
         <h1 class="text-5xl mb-10 font-bold">CharacterForge</h1>
         <h2 class="text-3xl" v-if="characterStore.characters.length !== 0">Characters:</h2>
-        <div class="py-4 flex flex-col gap-2 min-h-64">
+        <div class="py-4 flex flex-col gap-2 h-60 overflow-scroll my-5">
             <div v-if="characterStore.characters.length === 0">Hmm no characters have been created...</div>
             <div v-for="(character, i) in characterStore.characters"
                 class="px-2 py-3 bg-gray-100 rounded md flex flex-row items-center gap-2">
