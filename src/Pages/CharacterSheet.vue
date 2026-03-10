@@ -78,8 +78,9 @@ const exportCharacter = () => {
 }
 
 const toggleInspiration = () => {
-    character.inspiration = !character.inspiration
-    characterStore.updateCharacter(id, { ...character, inspiration: !character.inspiration });
+    const newInspiration = !character.inspiration
+    character.inspiration = newInspiration;
+    characterStore.updateCharacter(id, { ...character, inspiration: newInspiration });
 }
 
 </script>
