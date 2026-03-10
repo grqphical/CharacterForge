@@ -33,14 +33,14 @@
       {
         "name": "Dive Attack",
         "entries": [
-          "If you are flying and dive at least 30 ft. straight toward a target and then hit it with a melee weapon attack, the attack deals an extra {@damage 1d6} damage to the target."
+          "If you are flying and dive at least 30 ft. straight toward a target and then hit it with a melee weapon attack, the attack deals an extra 1d6 damage to the target."
         ],
         "type": "entries"
       },
       {
         "name": "Talons",
         "entries": [
-          "You are proficient with your unarmed strikes, which deal {@damage 1d4} slashing damage on a hit."
+          "You are proficient with your unarmed strikes, which deal 1d4 slashing damage on a hit."
         ],
         "type": "entries"
       },
@@ -129,7 +129,7 @@
       {
         "name": "Talons",
         "entries": [
-          "Your talons are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to {@damage 1d4} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+          "Your talons are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
         ],
         "type": "entries"
       },
@@ -238,7 +238,7 @@
       {
         "name": "Celestial Legacy",
         "entries": [
-          "You know the {@spell light} cantrip. Once you reach 3rd level, you can cast the {@spell lesser restoration} spell once with this trait, and you regain the ability to do so when you finish a long rest. Once you reach 5th level, you can cast the {@spell daylight} spell once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          "You know the Daylight spell once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
         ],
         "type": "entries"
       },
@@ -252,7 +252,7 @@
       {
         "name": "Necrotic Shroud",
         "entries": [
-          "Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant you transform, other creatures within 10 feet of you that can see you must succeed on a Charisma saving throw ({@dc 8} + your proficiency bonus + your Charisma modifier) or become {@condition frightened} of you until the end of your next turn.",
+          "Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant you transform, other creatures within 10 feet of you that can see you must succeed on a Charisma saving throw (Frightened of you until the end of your next turn.",
           "Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra necrotic damage equals your level.",
           "Once you use this trait, you can't use it again until you finish a long rest."
         ],
@@ -354,7 +354,7 @@
       {
         "name": "Celestial Legacy",
         "entries": [
-          "You know the {@spell light} cantrip. Once you reach 3rd level, you can cast the {@spell lesser restoration} spell once with this trait, and you regain the ability to do so when you finish a long rest. Once you reach 5th level, you can cast the {@spell daylight} spell once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          "You know the Daylight spell once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
         ],
         "type": "entries"
       },
@@ -470,7 +470,7 @@
       {
         "name": "Celestial Legacy",
         "entries": [
-          "You know the {@spell light} cantrip. Once you reach 3rd level, you can cast the {@spell lesser restoration} spell once with this trait, and you regain the ability to do so when you finish a long rest. Once you reach 5th level, you can cast the {@spell daylight} spell once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          "You know the Daylight spell once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
         ],
         "type": "entries"
       },
@@ -585,14 +585,14 @@
       {
         "name": "Sneaky",
         "entries": [
-          "You are proficient in the {@skill Stealth} skill."
+          "You are proficient in the Stealth skill."
         ],
         "type": "entries"
       },
       {
         "name": "Surprise Attack",
         "entries": [
-          "If you surprise a creature and hit it with an attack on your first turn in combat, the attack deals an extra {@damage 2d6} damage to it. You can use this trait only once per combat."
+          "If you surprise a creature and hit it with an attack on your first turn in combat, the attack deals an extra 2d6 damage to it. You can use this trait only once per combat."
         ],
         "type": "entries"
       },
@@ -698,14 +698,14 @@
       {
         "name": "Sneaky",
         "entries": [
-          "You are proficient in the {@skill Stealth} skill."
+          "You are proficient in the Stealth skill."
         ],
         "type": "entries"
       },
       {
         "name": "Surprise Attack",
         "entries": [
-          "If you surprise a creature and hit it with an attack on your first turn in combat, the attack deals an extra {@damage 2d6} damage to it. You can use this trait only once per combat."
+          "If you surprise a creature and hit it with an attack on your first turn in combat, the attack deals an extra 2d6 damage to it. You can use this trait only once per combat."
         ],
         "type": "entries"
       },
@@ -769,7 +769,7 @@
         "name": "Swamp Camouflage",
         "type": "entries",
         "entries": [
-          "You have advantage on Dexterity ({@skill Stealth}) checks made to hide in swampy terrain."
+          "You have advantage on Dexterity (Stealth) checks made to hide in swampy terrain."
         ]
       },
       {
@@ -877,7 +877,7 @@
         "type": "entries",
         "name": "Changeling Instincts",
         "entries": [
-          "You gain proficiency with two of the following skills of your choice: {@skill Deception}, {@skill Insight}, {@skill Intimidation}, and {@skill Persuasion}."
+          "You gain proficiency with two of the following skills of your choice: Persuasion."
         ]
       },
       {
@@ -953,14 +953,14 @@
         "type": "entries",
         "name": "Feat",
         "entries": [
-          "You gain one {@5etools feat|feats.html} of your choice for which you qualify."
+          "You gain one Feat|feats.html of your choice for which you qualify."
         ]
       },
       {
         "type": "entries",
         "name": "Variable Trait",
         "entries": [
-          "You gain one of the following options of your choice: (a) {@sense darkvision} with a range of 60 feet or (b) proficiency in one skill of your choice."
+          "You gain one of the following options of your choice: (a) Darkvision with a range of 60 feet or (b) proficiency in one skill of your choice."
         ]
       },
       {
@@ -984,7 +984,7 @@
               "name": "Variable Trait; Darkvision",
               "type": "entries",
               "entries": [
-                "You gain {@sense darkvision} with a range of 60 feet."
+                "You gain Darkvision with a range of 60 feet."
               ]
             }
           }
@@ -1154,7 +1154,7 @@
         "name": "Breath Weapon",
         "entries": [
           "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
-          "When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
+          "When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 5d6 at 16th level.",
           "After you use your breath weapon, you can't use it again until you complete a short or long rest."
         ],
         "type": "entries"
@@ -1324,7 +1324,7 @@
         "name": "Breath Weapon",
         "entries": [
           "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
-          "When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
+          "When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 5d6 at 16th level.",
           "After you use your breath weapon, you can't use it again until you complete a short or long rest."
         ],
         "type": "entries"
@@ -1354,7 +1354,7 @@
         "type": "entries",
         "name": "Forceful Presence",
         "entries": [
-          "You can use your understanding of creative diplomacy or intimidation to guide a conversation in your favor. When you make a Charisma ({@skill Intimidation} or {@skill Persuasion}) check, you can do so with advantage. Once you use this trait, you can't do so again until you finish a short or long rest."
+          "You can use your understanding of creative diplomacy or intimidation to guide a conversation in your favor. When you make a Charisma (Persuasion) check, you can do so with advantage. Once you use this trait, you can't do so again until you finish a short or long rest."
         ],
         "data": {
           "overwrite": "Damage Resistance"
@@ -1587,7 +1587,7 @@
         "name": "Breath Weapon",
         "entries": [
           "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
-          "When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
+          "When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 5d6 at 16th level.",
           "After you use your breath weapon, you can't use it again until you complete a short or long rest."
         ],
         "type": "entries"
@@ -1797,21 +1797,21 @@
       {
         "name": "Dwarven Combat Training",
         "entries": [
-          "You have proficiency with the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
+          "You have proficiency with the Warhammer|phb."
         ],
         "type": "entries"
       },
       {
         "name": "Tool Proficiency",
         "entries": [
-          "You gain proficiency with the {@item artisan's tools|PHB} of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
+          "You gain proficiency with the Tools|phb."
         ],
         "type": "entries"
       },
       {
         "name": "Stonecunning",
         "entries": [
-          "Whenever you make an Intelligence ({@skill History}) check related to the origin of stonework, you are considered proficient in the {@skill History} skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+          "Whenever you make an Intelligence (History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
         ],
         "type": "entries"
       },
@@ -1927,21 +1927,21 @@
       {
         "name": "Dwarven Combat Training",
         "entries": [
-          "You have proficiency with the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
+          "You have proficiency with the Warhammer|phb."
         ],
         "type": "entries"
       },
       {
         "name": "Tool Proficiency",
         "entries": [
-          "You gain proficiency with the {@item artisan's tools|PHB} of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
+          "You gain proficiency with the Tools|phb."
         ],
         "type": "entries"
       },
       {
         "name": "Stonecunning",
         "entries": [
-          "Whenever you make an Intelligence ({@skill History}) check related to the origin of stonework, you are considered proficient in the {@skill History} skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+          "Whenever you make an Intelligence (History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
         ],
         "type": "entries"
       },
@@ -1956,14 +1956,14 @@
         "type": "entries",
         "name": "Warder's Intuition",
         "entries": [
-          "When you make an Intelligence ({@skill Investigation}) check or an ability check using {@item thieves' tools|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check."
+          "When you make an Intelligence (D4 and add the number rolled to the ability check."
         ]
       },
       {
         "type": "entries",
         "name": "Wards and Seals",
         "entries": [
-          "You can cast the {@spell alarm} and {@spell mage armor} spells with this trait. Starting at 3rd level, you can also cast the {@spell arcane lock} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence is your spellcasting ability for these spells, and you don't need material components for them when you cast them with this trait."
+          "You can cast the Lock spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence is your spellcasting ability for these spells, and you don't need material components for them when you cast them with this trait."
         ]
       },
       {
@@ -1985,23 +1985,23 @@
             "rows": [
               [
                 "1st",
-                "{@spell alarm}, {@spell armor of Agathys}"
+                "Agathys"
               ],
               [
                 "2nd",
-                "{@spell arcane lock}, {@spell knock}"
+                "Knock"
               ],
               [
                 "3rd",
-                "{@spell glyph of warding}, {@spell magic circle}"
+                "Circle"
               ],
               [
                 "4th",
-                "{@spell Leomund's secret chest}, {@spell Mordenkainen's faithful hound}"
+                "Hound"
               ],
               [
                 "5th",
-                "{@spell antilife shell}"
+                "Shell"
               ]
             ]
           }
@@ -2105,21 +2105,21 @@
       {
         "name": "Dwarven Combat Training",
         "entries": [
-          "You have proficiency with the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
+          "You have proficiency with the Warhammer|phb."
         ],
         "type": "entries"
       },
       {
         "name": "Tool Proficiency",
         "entries": [
-          "You gain proficiency with the {@item artisan's tools|PHB} of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
+          "You gain proficiency with the Tools|phb."
         ],
         "type": "entries"
       },
       {
         "name": "Stonecunning",
         "entries": [
-          "Whenever you make an Intelligence ({@skill History}) check related to the origin of stonework, you are considered proficient in the {@skill History} skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+          "Whenever you make an Intelligence (History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
         ],
         "type": "entries"
       },
@@ -2207,14 +2207,14 @@
       {
         "name": "Keen Senses",
         "entries": [
-          "You have proficiency in the {@skill Perception} skill."
+          "You have proficiency in the Perception skill."
         ],
         "type": "entries"
       },
       {
         "name": "Fey Ancestry",
         "entries": [
-          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          "You have advantage on saving throws against being Charmed, and magic can't put you to sleep."
         ],
         "type": "entries"
       },
@@ -2222,7 +2222,7 @@
         "name": "Trance",
         "entries": [
           "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
-          "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+          "Changed."
         ],
         "type": "entries"
       },
@@ -2246,21 +2246,21 @@
       {
         "name": "Sunlight Sensitivity",
         "entries": [
-          "You have disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+          "You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
         ],
         "type": "entries"
       },
       {
         "name": "Drow Magic",
         "entries": [
-          "You know the {@spell dancing lights} cantrip. When you reach 3rd level, you can cast the {@spell faerie fire} spell once with this trait; you regain the ability to cast it when you finish a long rest. When you reach 5th level, you can also cast the {@spell darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          "You know the Darkness spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
         ],
         "type": "entries"
       },
       {
         "name": "Drow Weapon Training",
         "entries": [
-          "You have proficiency with {@item rapier|phb|rapiers}, {@item shortsword|phb|shortswords}, and {@item hand crossbow|phb|hand crossbows}."
+          "You have proficiency with Crossbows."
         ],
         "type": "entries"
       }
@@ -2334,14 +2334,14 @@
       {
         "name": "Keen Senses",
         "entries": [
-          "You have proficiency in the {@skill Perception} skill."
+          "You have proficiency in the Perception skill."
         ],
         "type": "entries"
       },
       {
         "name": "Fey Ancestry",
         "entries": [
-          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          "You have advantage on saving throws against being Charmed, and magic can't put you to sleep."
         ],
         "type": "entries"
       },
@@ -2349,7 +2349,7 @@
         "name": "Trance",
         "entries": [
           "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
-          "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+          "Changed."
         ],
         "type": "entries"
       },
@@ -2363,14 +2363,14 @@
       {
         "name": "Elf Weapon Training",
         "entries": [
-          "You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+          "You have proficiency with the Longbow|phb."
         ],
         "type": "entries"
       },
       {
         "name": "Fey Step",
         "entries": [
-          "You can cast the {@spell misty step} spell once using this trait. You regain the ability to do so when you finish a short or long rest."
+          "You can cast the Step spell once using this trait. You regain the ability to do so when you finish a short or long rest."
         ],
         "type": "entries"
       }
@@ -2444,14 +2444,14 @@
       {
         "name": "Keen Senses",
         "entries": [
-          "You have proficiency in the {@skill Perception} skill."
+          "You have proficiency in the Perception skill."
         ],
         "type": "entries"
       },
       {
         "name": "Fey Ancestry",
         "entries": [
-          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          "You have advantage on saving throws against being Charmed, and magic can't put you to sleep."
         ],
         "type": "entries"
       },
@@ -2459,7 +2459,7 @@
         "name": "Trance",
         "entries": [
           "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
-          "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+          "Changed."
         ],
         "type": "entries"
       },
@@ -2473,14 +2473,14 @@
       {
         "name": "Elf Weapon Training",
         "entries": [
-          "You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+          "You have proficiency with the Longbow|phb."
         ],
         "type": "entries"
       },
       {
         "name": "Cantrip",
         "entries": [
-          "You know one {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}. Intelligence is your spellcasting ability for it."
+          "You know one List|spells|level=0|class=Wizard. Intelligence is your spellcasting ability for it."
         ],
         "type": "entries"
       },
@@ -2561,14 +2561,14 @@
       {
         "name": "Keen Senses",
         "entries": [
-          "You have proficiency in the {@skill Perception} skill."
+          "You have proficiency in the Perception skill."
         ],
         "type": "entries"
       },
       {
         "name": "Fey Ancestry",
         "entries": [
-          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          "You have advantage on saving throws against being Charmed, and magic can't put you to sleep."
         ],
         "type": "entries"
       },
@@ -2576,7 +2576,7 @@
         "name": "Trance",
         "entries": [
           "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
-          "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+          "Changed."
         ],
         "type": "entries"
       },
@@ -2591,14 +2591,14 @@
         "type": "entries",
         "name": "Cunning Intuition",
         "entries": [
-          "When you make a Charisma ({@skill Performance}) or Dexterity ({@skill Stealth}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+          "When you make a Charisma (D4 and add the number rolled to the ability check."
         ]
       },
       {
         "type": "entries",
         "name": "Shape Shadows",
         "entries": [
-          "You know the {@spell minor illusion} cantrip. Starting at 3rd level, you can cast the {@spell invisibility} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          "You know the Invisibility spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
         ]
       },
       {
@@ -2620,23 +2620,23 @@
             "rows": [
               [
                 "1st",
-                "{@spell disguise self}, {@spell silent image}"
+                "Image"
               ],
               [
                 "2nd",
-                "{@spell darkness}, {@spell pass without trace}"
+                "Trace"
               ],
               [
                 "3rd",
-                "{@spell clairvoyance}, {@spell major image}"
+                "Image"
               ],
               [
                 "4th",
-                "{@spell greater invisibility}, {@spell hallucinatory terrain}"
+                "Terrain"
               ],
               [
                 "5th",
-                "{@spell mislead}"
+                "Mislead"
               ]
             ]
           }
@@ -2712,14 +2712,14 @@
       {
         "name": "Keen Senses",
         "entries": [
-          "You have proficiency in the {@skill Perception} skill."
+          "You have proficiency in the Perception skill."
         ],
         "type": "entries"
       },
       {
         "name": "Fey Ancestry",
         "entries": [
-          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          "You have advantage on saving throws against being Charmed, and magic can't put you to sleep."
         ],
         "type": "entries"
       },
@@ -2727,7 +2727,7 @@
         "name": "Trance",
         "entries": [
           "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
-          "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+          "Changed."
         ],
         "type": "entries"
       },
@@ -2741,7 +2741,7 @@
       {
         "name": "Incisive Sense",
         "entries": [
-          "You have advantage on Intelligence ({@skill Investigation}) and Wisdom ({@skill Insight}) checks."
+          "You have advantage on Intelligence (Insight) checks."
         ],
         "type": "entries"
       },
@@ -2749,7 +2749,7 @@
         "type": "entries",
         "name": "Blessing of the Moon Weaver",
         "entries": [
-          "You know the {@spell light} cantrip. When you reach 3rd level, you can cast the {@spell sleep} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell invisibility} spell (targeting yourself only) once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
+          "You know the Invisibility spell (targeting yourself only) once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
         ]
       }
     ],
@@ -2822,14 +2822,14 @@
       {
         "name": "Keen Senses",
         "entries": [
-          "You have proficiency in the {@skill Perception} skill."
+          "You have proficiency in the Perception skill."
         ],
         "type": "entries"
       },
       {
         "name": "Fey Ancestry",
         "entries": [
-          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          "You have advantage on saving throws against being Charmed, and magic can't put you to sleep."
         ],
         "type": "entries"
       },
@@ -2837,7 +2837,7 @@
         "name": "Trance",
         "entries": [
           "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
-          "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+          "Changed."
         ],
         "type": "entries"
       },
@@ -2851,7 +2851,7 @@
       {
         "name": "Elf Weapon Training",
         "entries": [
-          "You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+          "You have proficiency with the Longbow|phb."
         ],
         "type": "entries"
       },
@@ -2953,14 +2953,14 @@
       {
         "name": "Firbolg Magic",
         "entries": [
-          "You can cast {@spell detect magic} and {@spell disguise self} with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a short or long rest. When you use this version of {@spell disguise self}, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves."
+          "You can cast Self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves."
         ],
         "type": "entries"
       },
       {
         "name": "Hidden Step",
         "entries": [
-          "As a bonus action, you can magically turn {@condition invisible} until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't use it again until you finish a short or long rest."
+          "As a bonus action, you can magically turn Invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't use it again until you finish a short or long rest."
         ],
         "type": "entries"
       },
@@ -3072,14 +3072,14 @@
       {
         "name": "Unending Breath",
         "entries": [
-          "You can hold your breath indefinitely while you're not {@condition incapacitated}."
+          "You can hold your breath indefinitely while you're not Incapacitated."
         ],
         "type": "entries"
       },
       {
         "name": "Mingle with the Wind",
         "entries": [
-          "You can cast the {@spell levitate} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell."
+          "You can cast the Levitate spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell."
         ],
         "type": "entries"
       }
@@ -3170,14 +3170,14 @@
       {
         "name": "Earth Walk",
         "entries": [
-          "You can move across {@quickref difficult terrain||3} made of earth or stone without expending extra movement."
+          "You can move across Terrain||3 made of earth or stone without expending extra movement."
         ],
         "type": "entries"
       },
       {
         "name": "Merge with Stone",
         "entries": [
-          "You can cast the {@spell pass without trace} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell."
+          "You can cast the Trace spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell."
         ],
         "type": "entries"
       }
@@ -3282,7 +3282,7 @@
       {
         "name": "Reach to the Blaze",
         "entries": [
-          "You know the {@spell produce flame} cantrip. Once you reach 3rd level, you can cast the {@spell burning hands} spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells."
+          "You know the Hands spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells."
         ],
         "type": "entries"
       }
@@ -3394,7 +3394,7 @@
       {
         "name": "Call to the Wave",
         "entries": [
-          "You know the {@spell shape water|xge} cantrip. When you reach 3rd level, you can cast the {@spell create or destroy water} spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells."
+          "You know the Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells."
         ],
         "type": "entries"
       }
@@ -3429,7 +3429,7 @@
       {
         "name": "Bite",
         "entries": [
-          "Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to {@damage 1d4} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+          "Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
         ],
         "type": "entries"
       },
@@ -3503,12 +3503,12 @@
               {
                 "type": "itemSpell",
                 "name": "At will:",
-                "entry": "{@spell nondetection} (self only)"
+                "entry": "Nondetection (self only)"
               },
               {
                 "type": "itemSpell",
                 "name": "1/day each:",
-                "entry": "{@spell blindness/deafness}, {@spell blur}, {@spell disguise self}"
+                "entry": "Self"
               }
             ]
           },
@@ -3519,7 +3519,7 @@
       {
         "name": "Stone Camouflage",
         "entries": [
-          "You have advantage on Dexterity ({@skill Stealth}) checks to hide in rocky terrain."
+          "You have advantage on Dexterity (Stealth) checks to hide in rocky terrain."
         ],
         "type": "entries"
       },
@@ -3668,7 +3668,7 @@
       {
         "name": "Stone Camouflage",
         "entries": [
-          "You have advantage on Dexterity ({@skill Stealth}) checks to hide in rocky terrain."
+          "You have advantage on Dexterity (Stealth) checks to hide in rocky terrain."
         ],
         "type": "entries"
       },
@@ -3765,7 +3765,7 @@
       {
         "name": "Natural Illusionist",
         "entries": [
-          "You know the {@spell minor illusion} cantrip. Intelligence is your spellcasting ability for it."
+          "You know the Illusion cantrip. Intelligence is your spellcasting ability for it."
         ],
         "type": "entries"
       },
@@ -3860,14 +3860,14 @@
         "type": "entries",
         "name": "Gifted Scribe",
         "entries": [
-          "When you make an Intelligence ({@skill History}) check or an ability check using {@item calligrapher's supplies|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check."
+          "When you make an Intelligence (D4 and add the number rolled to the ability check."
         ]
       },
       {
         "type": "entries",
         "name": "Scribe's Insight",
         "entries": [
-          "You know the {@spell message} cantrip. You can also cast {@spell comprehend languages} once with this trait, and you regain the ability to cast it when you finish a short or long rest. Starting at 3rd level, you can cast the {@spell magic mouth} spell with this trait, and you regain the ability to cast it when you finish a long rest. Intelligence is your spellcasting ability for these spells."
+          "You know the Mouth spell with this trait, and you regain the ability to cast it when you finish a long rest. Intelligence is your spellcasting ability for these spells."
         ]
       },
       {
@@ -3889,23 +3889,23 @@
             "rows": [
               [
                 "1st",
-                "{@spell comprehend languages}, {@spell illusory script}"
+                "Script"
               ],
               [
                 "2nd",
-                "{@spell animal messenger}, {@spell silence}"
+                "Silence"
               ],
               [
                 "3rd",
-                "{@spell sending}, {@spell tongues}"
+                "Tongues"
               ],
               [
                 "4th",
-                "{@spell arcane eye}, {@spell confusion}"
+                "Confusion"
               ],
               [
                 "5th",
-                "{@spell dream}"
+                "Dream"
               ]
             ]
           }
@@ -3994,14 +3994,14 @@
       {
         "name": "Artificer's Lore",
         "entries": [
-          "Whenever you make an Intelligence ({@skill History}) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply."
+          "Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply."
         ],
         "type": "entries"
       },
       {
         "name": "Tinker",
         "entries": [
-          "You have proficiency with {@item artisan's tools|PHB} ({@item tinker's tools|phb}). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time.",
+          "You have proficiency with Tools|phb). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time.",
           "When you create a device, choose one of the following options:",
           {
             "type": "entries",
@@ -4063,7 +4063,7 @@
       {
         "name": "Nimble Escape",
         "entries": [
-          "You can take the {@action Disengage} or {@action Hide} action as a bonus action on each of your turns."
+          "You can take the Hide action as a bonus action on each of your turns."
         ],
         "type": "entries"
       },
@@ -4207,7 +4207,7 @@
       {
         "name": "Nimble Escape",
         "entries": [
-          "You can take the {@action Disengage} or {@action Hide} action as a bonus action on each of your turns."
+          "You can take the Hide action as a bonus action on each of your turns."
         ],
         "type": "entries"
       },
@@ -4301,14 +4301,14 @@
       {
         "name": "Natural Athlete",
         "entries": [
-          "You have proficiency in the {@skill Athletics} skill."
+          "You have proficiency in the Athletics skill."
         ],
         "type": "entries"
       },
       {
         "name": "Stone's Endurance",
         "entries": [
-          "You can focus yourself to occasionally shrug off injury. When you take damage, you can use your reaction to roll a {@dice d12}. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can't use it again until you finish a short or long rest."
+          "You can focus yourself to occasionally shrug off injury. When you take damage, you can use your reaction to roll a D12. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can't use it again until you finish a short or long rest."
         ],
         "type": "entries"
       },
@@ -4368,7 +4368,7 @@
       {
         "name": "Blindsight",
         "entries": [
-          "You have no eyes, and cannot be {@condition blinded}. You can perceive your surroundings within 30 ft., or 10 ft. while {@condition deafened}. You are considered blind beyond this radius."
+          "You have no eyes, and cannot be Deafened. You are considered blind beyond this radius."
         ],
         "type": "entries"
       },
@@ -4376,14 +4376,14 @@
         "type": "entries",
         "name": "Keen Hearing and Smell",
         "entries": [
-          "You have advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+          "You have advantage on Wisdom (Perception) checks that rely on hearing or smell."
         ]
       },
       {
         "type": "entries",
         "name": "Stone Camouflage",
         "entries": [
-          "You have advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
+          "You have advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
         ]
       },
       {
@@ -4474,7 +4474,7 @@
       {
         "name": "Fey Ancestry",
         "entries": [
-          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          "You have advantage on saving throws against being Charmed, and magic can't put you to sleep."
         ],
         "type": "entries"
       },
@@ -4575,7 +4575,7 @@
       {
         "name": "Fey Ancestry",
         "entries": [
-          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          "You have advantage on saving throws against being Charmed, and magic can't put you to sleep."
         ],
         "type": "entries"
       },
@@ -4699,7 +4699,7 @@
       {
         "name": "Fey Ancestry",
         "entries": [
-          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          "You have advantage on saving throws against being Charmed, and magic can't put you to sleep."
         ],
         "type": "entries"
       },
@@ -4731,7 +4731,7 @@
           {
             "name": "Drow Magic",
             "entries": [
-              "You know the {@spell dancing lights} cantrip. When you reach 3rd level, you can cast the {@spell faerie fire} spell once per day; you must finish a long rest in order to cast the spell again using this trait. When you reach 5th level, you can also cast the {@spell darkness} spell once per day; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+              "You know the Darkness spell once per day; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
             ],
             "type": "entries"
           }
@@ -4836,7 +4836,7 @@
       {
         "name": "Fey Ancestry",
         "entries": [
-          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          "You have advantage on saving throws against being Charmed, and magic can't put you to sleep."
         ],
         "type": "entries"
       },
@@ -4858,7 +4858,7 @@
         "type": "entries",
         "name": "Deductive Intuition",
         "entries": [
-          "When you make an Intelligence ({@skill Investigation}) or a Wisdom ({@skill Insight}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+          "When you make an Intelligence (D4 and add the number rolled to the ability check."
         ],
         "data": {
           "overwrite": "Skill Versatility"
@@ -4868,7 +4868,7 @@
         "type": "entries",
         "name": "Magical Detection",
         "entries": [
-          "You can cast the {@spell detect magic} and {@spell detect poison and disease} spells with this trait. Starting at 3rd level, you can also cast the {@spell see invisibility} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells, and you don't require material components for them."
+          "You can cast the Invisibility spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells, and you don't require material components for them."
         ]
       },
       {
@@ -4890,23 +4890,23 @@
             "rows": [
               [
                 "1st",
-                "{@spell detect evil and good}, {@spell detect poison and disease}"
+                "Disease"
               ],
               [
                 "2nd",
-                "{@spell detect thoughts}, {@spell find traps}"
+                "Traps"
               ],
               [
                 "3rd",
-                "{@spell clairvoyance}, {@spell nondetection}"
+                "Nondetection"
               ],
               [
                 "4th",
-                "{@spell arcane eye}, {@spell divination}"
+                "Divination"
               ],
               [
                 "5th",
-                "{@spell legend lore}"
+                "Lore"
               ]
             ]
           }
@@ -4999,7 +4999,7 @@
       {
         "name": "Fey Ancestry",
         "entries": [
-          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          "You have advantage on saving throws against being Charmed, and magic can't put you to sleep."
         ],
         "type": "entries"
       },
@@ -5021,7 +5021,7 @@
         "type": "entries",
         "name": "Windwright's Intuition",
         "entries": [
-          "When you make a Dexterity ({@skill Acrobatics}) check or any ability check involving {@item navigator's tools|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check."
+          "When you make a Dexterity (D4 and add the number rolled to the ability check."
         ],
         "data": {
           "overwrite": "Skill Versatility"
@@ -5038,7 +5038,7 @@
         "type": "entries",
         "name": "Headwinds",
         "entries": [
-          "You know the {@spell gust|XGE} cantrip. Starting at 3rd level, you can cast the {@spell gust of wind} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          "You know the Wind spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
         ]
       },
       {
@@ -5060,23 +5060,23 @@
             "rows": [
               [
                 "1st",
-                "{@spell feather fall}, {@spell fog cloud}"
+                "Cloud"
               ],
               [
                 "2nd",
-                "{@spell gust of wind}, {@spell levitate}"
+                "Levitate"
               ],
               [
                 "3rd",
-                "{@spell sleet storm}, {@spell wind wall}"
+                "Wall"
               ],
               [
                 "4th",
-                "{@spell conjure minor elementals}, {@spell control water}"
+                "Water"
               ],
               [
                 "5th",
-                "{@spell conjure elemental}"
+                "Elemental"
               ]
             ]
           }
@@ -5165,7 +5165,7 @@
       {
         "name": "Fey Ancestry",
         "entries": [
-          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          "You have advantage on saving throws against being Charmed, and magic can't put you to sleep."
         ],
         "type": "entries"
       },
@@ -5197,14 +5197,14 @@
           {
             "name": "Elf Weapon Training",
             "entries": [
-              "You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+              "You have proficiency with the Longbow|phb."
             ],
             "type": "entries"
           },
           {
             "name": "Cantrip",
             "entries": [
-              "You know one cantrip of your choice from the {@filter wizard spell list|spells|class=wizard|level=0}. Intelligence is your spellcasting ability for it."
+              "You know one cantrip of your choice from the List|spells|class=wizard|level=0. Intelligence is your spellcasting ability for it."
             ],
             "type": "entries"
           }
@@ -5296,7 +5296,7 @@
       {
         "name": "Fey Ancestry",
         "entries": [
-          "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          "You have advantage on saving throws against being Charmed, and magic can't put you to sleep."
         ],
         "type": "entries"
       },
@@ -5328,7 +5328,7 @@
           {
             "name": "Elf Weapon Training",
             "entries": [
-              "You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+              "You have proficiency with the Longbow|phb."
             ],
             "type": "entries"
           },
@@ -5424,7 +5424,7 @@
       {
         "name": "Menacing",
         "entries": [
-          "You gain proficiency in the {@skill Intimidation} skill."
+          "You gain proficiency in the Intimidation skill."
         ],
         "type": "entries"
       },
@@ -5522,7 +5522,7 @@
       {
         "name": "Menacing",
         "entries": [
-          "You gain proficiency in the {@skill Intimidation} skill."
+          "You gain proficiency in the Intimidation skill."
         ],
         "type": "entries"
       },
@@ -5561,7 +5561,7 @@
         "type": "entries",
         "name": "Hunter's Intuition",
         "entries": [
-          "When you make a Wisdom ({@skill Perception}) or Wisdom ({@skill Survival}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+          "When you make a Wisdom (D4 and add the number rolled to the ability check."
         ],
         "data": {
           "overwrite": "Menacing"
@@ -5571,7 +5571,7 @@
         "type": "entries",
         "name": "Finder's Magic",
         "entries": [
-          "You can cast the {@spell hunter's mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell locate object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+          "You can cast the Object spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
         ],
         "data": {
           "overwrite": "Relentless Endurance"
@@ -5606,23 +5606,23 @@
             "rows": [
               [
                 "1st",
-                "{@spell faerie fire}, {@spell longstrider}"
+                "Longstrider"
               ],
               [
                 "2nd",
-                "{@spell locate animals or plants}, {@spell locate object}"
+                "Object"
               ],
               [
                 "3rd",
-                "{@spell clairvoyance}, {@spell speak with plants}"
+                "Plants"
               ],
               [
                 "4th",
-                "{@spell divination}, {@spell locate creature}"
+                "Creature"
               ],
               [
                 "5th",
-                "{@spell commune with nature}"
+                "Nature"
               ]
             ]
           }
@@ -5697,7 +5697,7 @@
       {
         "name": "Brave",
         "entries": [
-          "You have advantage on saving throws against being {@condition frightened}."
+          "You have advantage on saving throws against being Frightened."
         ],
         "type": "entries"
       },
@@ -5788,7 +5788,7 @@
       {
         "name": "Brave",
         "entries": [
-          "You have advantage on saving throws against being {@condition frightened}."
+          "You have advantage on saving throws against being Frightened."
         ],
         "type": "entries"
       },
@@ -5879,7 +5879,7 @@
       {
         "name": "Brave",
         "entries": [
-          "You have advantage on saving throws against being {@condition frightened}."
+          "You have advantage on saving throws against being Frightened."
         ],
         "type": "entries"
       },
@@ -5901,14 +5901,14 @@
         "type": "entries",
         "name": "Child of the Wood",
         "entries": [
-          "You know the {@spell druidcraft} cantrip. When you reach 3rd level, you can cast the {@spell entangle} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell spike growth} spell once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
+          "You know the Growth spell once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
         ]
       },
       {
         "type": "entries",
         "name": "Timberwalk",
         "entries": [
-          "Ability checks made to track you have disadvantage, and you can move across {@quickref difficult terrain||3} made of nonmagical plants and undergrowth without expending extra movement."
+          "Ability checks made to track you have disadvantage, and you can move across Terrain||3 made of nonmagical plants and undergrowth without expending extra movement."
         ]
       }
     ],
@@ -5977,7 +5977,7 @@
       {
         "name": "Brave",
         "entries": [
-          "You have advantage on saving throws against being {@condition frightened}."
+          "You have advantage on saving throws against being Frightened."
         ],
         "type": "entries"
       },
@@ -5999,14 +5999,14 @@
         "type": "entries",
         "name": "Medical Intuition",
         "entries": [
-          "When you make a Wisdom ({@skill Medicine}) check or an ability check using an {@item herbalism kit|phb}, you can roll a {@dice d4} and add the number rolled to the ability check."
+          "When you make a Wisdom (D4 and add the number rolled to the ability check."
         ]
       },
       {
         "type": "entries",
         "name": "Healing Touch",
         "entries": [
-          "You can cast the {@spell cure wounds} spell with this trait. Starting at 3rd level, you can also cast {@spell lesser restoration} with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+          "You can cast the Restoration with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
         ]
       },
       {
@@ -6028,23 +6028,23 @@
             "rows": [
               [
                 "1st",
-                "{@spell cure wounds}, {@spell healing word}"
+                "Word"
               ],
               [
                 "2nd",
-                "{@spell lesser restoration}, {@spell prayer of healing}"
+                "Healing"
               ],
               [
                 "3rd",
-                "{@spell aura of vitality}, {@spell mass healing word}"
+                "Word"
               ],
               [
                 "4th",
-                "{@spell aura of purity}, {@spell aura of life}"
+                "Life"
               ],
               [
                 "5th",
-                "{@spell greater restoration}"
+                "Restoration"
               ]
             ]
           }
@@ -6116,7 +6116,7 @@
       {
         "name": "Brave",
         "entries": [
-          "You have advantage on saving throws against being {@condition frightened}."
+          "You have advantage on saving throws against being Frightened."
         ],
         "type": "entries"
       },
@@ -6138,14 +6138,14 @@
         "type": "entries",
         "name": "Ever Hospitable",
         "entries": [
-          "When you make a Charisma ({@skill Persuasion}) check or an ability check involving {@item brewer's supplies|PHB} or {@item cook's utensils|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check."
+          "When you make a Charisma (D4 and add the number rolled to the ability check."
         ]
       },
       {
         "type": "entries",
         "name": "Innkeeper's Magic",
         "entries": [
-          "You know the {@spell prestidigitation} cantrip. You can also cast the {@spell purify food and drink} and {@spell unseen servant} spells with this trait. Once you cast either spell with this trait, you can't cast that spell with it again until you finish long rest. Charisma is your spellcasting ability for these spells."
+          "You know the Servant spells with this trait. Once you cast either spell with this trait, you can't cast that spell with it again until you finish long rest. Charisma is your spellcasting ability for these spells."
         ]
       },
       {
@@ -6167,23 +6167,23 @@
             "rows": [
               [
                 "1st",
-                "{@spell goodberry}, {@spell sleep}"
+                "Sleep"
               ],
               [
                 "2nd",
-                "{@spell aid}, {@spell calm emotions}"
+                "Emotions"
               ],
               [
                 "3rd",
-                "{@spell create food and water}, {@spell Leomund's tiny hut}"
+                "Hut"
               ],
               [
                 "4th",
-                "{@spell aura of purity}, {@spell Mordenkainen's private sanctum}"
+                "Sanctum"
               ],
               [
                 "5th",
-                "{@spell hallow}"
+                "Hallow"
               ]
             ]
           }
@@ -6255,7 +6255,7 @@
       {
         "name": "Brave",
         "entries": [
-          "You have advantage on saving throws against being {@condition frightened}."
+          "You have advantage on saving throws against being Frightened."
         ],
         "type": "entries"
       },
@@ -6311,7 +6311,7 @@
         "type": "entries",
         "name": "Martial Advantage",
         "entries": [
-          "Once per turn, you can deal an extra {@damage 2d6} damage to a creature you hit with a weapon attack if that creature is within 5 ft. of an ally of yours that isn't {@condition incapacitated}."
+          "Once per turn, you can deal an extra Incapacitated."
         ]
       },
       {
@@ -6457,7 +6457,7 @@
       {
         "name": "Martial Training",
         "entries": [
-          "You are proficient with two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon} of your choice and with light armor."
+          "You are proficient with two Weapon of your choice and with light armor."
         ],
         "type": "entries"
       },
@@ -6601,21 +6601,21 @@
         "type": "entries",
         "name": "Wild Intuition",
         "entries": [
-          "When you make a Wisdom ({@skill Animal Handling}) or Intelligence ({@skill Nature}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+          "When you make a Wisdom (D4 and add the number rolled to the ability check."
         ]
       },
       {
         "type": "entries",
         "name": "Primal Connection",
         "entries": [
-          "You can cast the {@spell animal friendship} and {@spell speak with animals} spells with this trait, requiring no material component. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a short or long rest. Wisdom is your spellcasting ability for these spells."
+          "You can cast the Animals spells with this trait, requiring no material component. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a short or long rest. Wisdom is your spellcasting ability for these spells."
         ]
       },
       {
         "type": "entries",
         "name": "The Bigger They Are",
         "entries": [
-          "Starting at 3rd level, you can target a beast or monstrosity when you cast {@spell animal friendship} or {@spell speak with animals}, provided the creature's Intelligence score is 3 or lower."
+          "Starting at 3rd level, you can target a beast or monstrosity when you cast Animals, provided the creature's Intelligence score is 3 or lower."
         ]
       },
       {
@@ -6637,23 +6637,23 @@
             "rows": [
               [
                 "1st",
-                "{@spell animal friendship}, {@spell speak with animals}"
+                "Animals"
               ],
               [
                 "2nd",
-                "{@spell beast sense}, {@spell calm emotions}"
+                "Emotions"
               ],
               [
                 "3rd",
-                "{@spell beacon of hope}, {@spell conjure animals}"
+                "Animals"
               ],
               [
                 "4th",
-                "{@spell aura of life}, {@spell dominate beast}"
+                "Beast"
               ],
               [
                 "5th",
-                "{@spell awaken}"
+                "Awaken"
               ]
             ]
           }
@@ -6734,21 +6734,21 @@
         "type": "entries",
         "name": "Artisan's Intuition",
         "entries": [
-          "When you make an {@skill Arcana} check or an ability check involving {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}, you can roll a {@dice d4} and add the number rolled to the ability check."
+          "When you make an D4 and add the number rolled to the ability check."
         ]
       },
       {
         "type": "entries",
         "name": "Maker's Gift",
         "entries": [
-          "You gain proficiency with one type of {@item artisan's tools|PHB} of your choice."
+          "You gain proficiency with one type of Tools|PHB of your choice."
         ]
       },
       {
         "type": "entries",
         "name": "Spellsmith",
         "entries": [
-          "You know the {@spell mending} cantrip. You can also cast the {@spell magic weapon} spell with this trait. When you do so, the spell lasts for 1 hour and doesn't require {@status concentration}. Once you cast the spell with this trait, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for these spells."
+          "You know the Concentration. Once you cast the spell with this trait, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for these spells."
         ]
       },
       {
@@ -6770,23 +6770,23 @@
             "rows": [
               [
                 "1st",
-                "{@spell identify}, {@spell Tenser's floating disk}"
+                "Disk"
               ],
               [
                 "2nd",
-                "{@spell continual flame}, {@spell magic weapon}"
+                "Weapon"
               ],
               [
                 "3rd",
-                "{@spell conjure barrage}, {@spell elemental weapon}"
+                "Weapon"
               ],
               [
                 "4th",
-                "{@spell fabricate}, {@spell stone shape}"
+                "Shape"
               ],
               [
                 "5th",
-                "{@spell creation}"
+                "Creation"
               ]
             ]
           }
@@ -6874,14 +6874,14 @@
         "type": "entries",
         "name": "Intuitive Motion",
         "entries": [
-          "When you make a Dexterity ({@skill Acrobatics}) check or any ability check to operate or maintain a {@filter land vehicle|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (land)}, you can roll a {@dice d4} and add the number rolled to the ability check."
+          "When you make a Dexterity (D4 and add the number rolled to the ability check."
         ]
       },
       {
         "type": "entries",
         "name": "Magical Passage",
         "entries": [
-          "You can cast the {@spell misty step} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Dexterity is your spellcasting ability for this spell."
+          "You can cast the Step spell once with this trait, and you regain the ability to cast it when you finish a long rest. Dexterity is your spellcasting ability for this spell."
         ]
       },
       {
@@ -6903,23 +6903,23 @@
             "rows": [
               [
                 "1st",
-                "{@spell expeditious retreat}, {@spell jump}"
+                "Jump"
               ],
               [
                 "2nd",
-                "{@spell misty step}, {@spell pass without trace}"
+                "Trace"
               ],
               [
                 "3rd",
-                "{@spell blink}, {@spell phantom steed}"
+                "Steed"
               ],
               [
                 "4th",
-                "{@spell dimension door}, {@spell freedom of movement}"
+                "Movement"
               ],
               [
                 "5th",
-                "{@spell teleportation circle}"
+                "Circle"
               ]
             ]
           }
@@ -7000,14 +7000,14 @@
         "type": "entries",
         "name": "Sentinel's Intuition",
         "entries": [
-          "When you make a Wisdom ({@skill Insight}) or Wisdom ({@skill Perception}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+          "When you make a Wisdom (D4 and add the number rolled to the ability check."
         ]
       },
       {
         "type": "entries",
         "name": "Guardian's Shield",
         "entries": [
-          "You can cast the {@spell shield} spell once with this trait, and you regain the ability to cast it after you finish a long rest. Wisdom is your spellcasting ability for this spell."
+          "You can cast the Shield spell once with this trait, and you regain the ability to cast it after you finish a long rest. Wisdom is your spellcasting ability for this spell."
         ]
       },
       {
@@ -7036,23 +7036,23 @@
             "rows": [
               [
                 "1st",
-                "{@spell compelled duel}, {@spell shield of faith}"
+                "Faith"
               ],
               [
                 "2nd",
-                "{@spell warding bond}, {@spell zone of truth}"
+                "Truth"
               ],
               [
                 "3rd",
-                "{@spell counterspell}, {@spell protection from energy}"
+                "Energy"
               ],
               [
                 "4th",
-                "{@spell death ward}, {@spell guardian of faith}"
+                "Faith"
               ],
               [
                 "5th",
-                "{@spell Bigby's hand}"
+                "Hand"
               ]
             ]
           }
@@ -7131,14 +7131,14 @@
         "type": "entries",
         "name": "Hunter's Intuition",
         "entries": [
-          "When you make a Wisdom ({@skill Perception}) or Wisdom ({@skill Survival}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+          "When you make a Wisdom (D4 and add the number rolled to the ability check."
         ]
       },
       {
         "type": "entries",
         "name": "Finder's Magic",
         "entries": [
-          "You can cast the {@spell hunter's mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell locate object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+          "You can cast the Object spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
         ]
       },
       {
@@ -7170,23 +7170,23 @@
             "rows": [
               [
                 "1st",
-                "{@spell faerie fire}, {@spell longstrider}"
+                "Longstrider"
               ],
               [
                 "2nd",
-                "{@spell locate animals or plants}, {@spell locate object}"
+                "Object"
               ],
               [
                 "3rd",
-                "{@spell clairvoyance}, {@spell speak with plants}"
+                "Plants"
               ],
               [
                 "4th",
-                "{@spell divination}, {@spell locate creature}"
+                "Creature"
               ],
               [
                 "5th",
-                "{@spell commune with nature}"
+                "Nature"
               ]
             ]
           }
@@ -7264,7 +7264,7 @@
       {
         "name": "Feat",
         "entries": [
-          "You gain one {@5etools feat|feats.html} of your choice."
+          "You gain one Feat|feats.html of your choice."
         ],
         "type": "entries"
       }
@@ -7369,7 +7369,7 @@
         "type": "entries",
         "name": "Severed from Dreams",
         "entries": [
-          "Kalashtar sleep, but they don't connect to the plane of dreams as other creatures do. Instead, their minds draw from the memories of their otherworldly spirit while they sleep. As such, you are immune to spells and other magical effects that require you to dream, like {@spell dream}, but not to spells and other magical effects that put you to sleep, like {@spell sleep}."
+          "Kalashtar sleep, but they don't connect to the plane of dreams as other creatures do. Instead, their minds draw from the memories of their otherworldly spirit while they sleep. As such, you are immune to spells and other magical effects that require you to dream, like Sleep."
         ]
       },
       {
@@ -7414,14 +7414,14 @@
       {
         "name": "Ambusher",
         "entries": [
-          "In the first round of a combat, you have advantage on attack rolls against any creature who is {@status surprised}."
+          "In the first round of a combat, you have advantage on attack rolls against any creature who is Surprised."
         ],
         "type": "entries"
       },
       {
         "name": "Mimicry",
         "entries": [
-          "You can mimic any sounds you have heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 14} Wisdom ({@skill Insight}) check."
+          "You can mimic any sounds you have heard, including voices. A creature that hears the sounds can tell they are imitations with a successful Insight) check."
         ],
         "type": "entries"
       },
@@ -7515,14 +7515,14 @@
       {
         "name": "Kenku Training",
         "entries": [
-          "You are proficient in your choice of two of the following skills: {@skill Acrobatics}, {@skill Deception}, {@skill Stealth}, and {@skill Sleight of Hand}."
+          "You are proficient in your choice of two of the following skills: Hand."
         ],
         "type": "entries"
       },
       {
         "name": "Mimicry",
         "entries": [
-          "You can mimic sounds you have heard, including voices. A creature that hears the sounds can tell they are imitations with a successful Wisdom ({@skill Insight}) check opposed by your Charisma ({@skill Deception}) check."
+          "You can mimic sounds you have heard, including voices. A creature that hears the sounds can tell they are imitations with a successful Wisdom (Deception) check."
         ],
         "type": "entries"
       },
@@ -7570,14 +7570,14 @@
       {
         "name": "Pack Tactics",
         "entries": [
-          "You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+          "You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't Incapacitated."
         ],
         "type": "entries"
       },
       {
         "name": "Sunlight Sensitivity",
         "entries": [
-          "You have disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+          "You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
         ],
         "type": "entries"
       },
@@ -7669,14 +7669,14 @@
       {
         "name": "Pack Tactics",
         "entries": [
-          "You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+          "You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't Incapacitated."
         ],
         "type": "entries"
       },
       {
         "name": "Sunlight Sensitivity",
         "entries": [
-          "You have disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+          "You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
         ],
         "type": "entries"
       },
@@ -7729,7 +7729,7 @@
         "name": "Otherworldly Perception",
         "type": "entries",
         "entries": [
-          "You can sense the presence of any creature within 30 feet of you that is {@condition invisible} or on the Ethereal Plane. You can pinpoint such a creature that is moving."
+          "You can sense the presence of any creature within 30 feet of you that is Invisible or on the Ethereal Plane. You can pinpoint such a creature that is moving."
         ]
       },
       {
@@ -7743,7 +7743,7 @@
         "name": "Sunlight Sensitivity",
         "type": "entries",
         "entries": [
-          "While in sunlight, you have disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+          "While in sunlight, you have disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
         ]
       },
       {
@@ -7899,14 +7899,14 @@
       {
         "name": "Bite",
         "entries": [
-          "Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to {@damage 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+          "Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
         ],
         "type": "entries"
       },
       {
         "name": "Cunning Artisan",
         "entries": [
-          "As part of a short rest, you can harvest bone and hide from a slain beast, construct, dragon, monstrosity, or plant creature of size small or larger to create one of the following items: a {@item shield|phb}, a {@item club|phb}, a {@item javelin|phb}, or {@dice 1d4} {@item dart|phb|darts} or {@item blowgun needle|phb|blowgun needles}. To use this trait, you need a blade, such as a {@item dagger|phb}, or appropriate {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}, such as {@item leatherworker's tools|phb}."
+          "As part of a short rest, you can harvest bone and hide from a slain beast, construct, dragon, monstrosity, or plant creature of size small or larger to create one of the following items: a Tools|phb."
         ],
         "type": "entries"
       },
@@ -7920,7 +7920,7 @@
       {
         "name": "Hunter's Lore",
         "entries": [
-          "You gain proficiency with two of the following skills of your choice: {@skill Animal Handling}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, and {@skill Survival}."
+          "You gain proficiency with two of the following skills of your choice: Survival."
         ],
         "type": "entries"
       },
@@ -8092,7 +8092,7 @@
               "type": "entries",
               "name": "Primal Intuition",
               "entries": [
-                "You have proficiency in two of the following skills of your choice: {@skill Animal Handling}, {@skill Insight}, {@skill Intimidation}, {@skill Medicine}, {@skill Perception}, and {@skill Survival}."
+                "You have proficiency in two of the following skills of your choice: Survival."
               ]
             }
           }
@@ -8220,7 +8220,7 @@
         "type": "entries",
         "name": "Primal Intuition",
         "entries": [
-          "You have proficiency in two of the following skills of your choice: {@skill Animal Handling}, {@skill Insight}, {@skill Intimidation}, {@skill Medicine}, {@skill Nature}, {@skill Perception}, and {@skill Survival}."
+          "You have proficiency in two of the following skills of your choice: Survival."
         ]
       },
       {
@@ -8329,7 +8329,7 @@
       {
         "name": "Primal Intuition",
         "entries": [
-          "You have proficiency in two of the following skills of your choice: {@skill Animal Handling}, {@skill Insight}, {@skill Intimidation}, {@skill Medicine}, {@skill Nature}, {@skill Perception}, and {@skill Survival}."
+          "You have proficiency in two of the following skills of your choice: Survival."
         ],
         "type": "entries"
       },
@@ -8433,14 +8433,14 @@
         "type": "entries",
         "name": "Natural Athlete",
         "entries": [
-          "You have proficiency in the {@skill Athletics} skill."
+          "You have proficiency in the Athletics skill."
         ]
       },
       {
         "type": "entries",
         "name": "Shifting Feature",
         "entries": [
-          "Whenever you shift, you gain {@dice 1d6} additional temporary hit points. While shifted, you have a +1 bonus to your Armor Class."
+          "Whenever you shift, you gain 1d6 additional temporary hit points. While shifted, you have a +1 bonus to your Armor Class."
         ]
       }
     ],
@@ -8535,14 +8535,14 @@
         "type": "entries",
         "name": "Fierce",
         "entries": [
-          "You have proficiency in the {@skill Intimidation} skill."
+          "You have proficiency in the Intimidation skill."
         ]
       },
       {
         "type": "entries",
         "name": "Shifting Feature",
         "entries": [
-          "While shifted, you can use your elongated fangs to make an unarmed strike as a bonus action. If you hit with your fangs, you can deal piercing damage equal to {@damage 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+          "While shifted, you can use your elongated fangs to make an unarmed strike as a bonus action. If you hit with your fangs, you can deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
         ]
       }
     ],
@@ -8637,7 +8637,7 @@
         "type": "entries",
         "name": "Graceful",
         "entries": [
-          "You have proficiency in the {@skill Acrobatics} skill."
+          "You have proficiency in the Acrobatics skill."
         ]
       },
       {
@@ -8739,14 +8739,14 @@
         "type": "entries",
         "name": "Natural Tracker",
         "entries": [
-          "You have proficiency in the {@skill Survival} skill."
+          "You have proficiency in the Survival skill."
         ]
       },
       {
         "type": "entries",
         "name": "Shifting Feature",
         "entries": [
-          "While shifted, you have advantage on Wisdom checks, and no creature within 30 feet of you can make an attack roll with advantage against you, unless you're {@condition incapacitated}."
+          "While shifted, you have advantage on Wisdom checks, and no creature within 30 feet of you can make an attack roll with advantage against you, unless you're Incapacitated."
         ]
       }
     ],
@@ -8815,7 +8815,7 @@
         "type": "entries",
         "name": "Undead Nature",
         "entries": [
-          "You are immune to poison damage and {@condition exhaustion}, and you can't be {@condition poisoned}. You don't require air, food, drink, or sleep."
+          "You are immune to poison damage and Poisoned. You don't require air, food, drink, or sleep."
         ]
       },
       {
@@ -8922,14 +8922,14 @@
       {
         "name": "Cat's Claws",
         "entries": [
-          "Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to {@damage 1d4} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+          "Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
         ],
         "type": "entries"
       },
       {
         "name": "Cat's Talents",
         "entries": [
-          "You have proficiency in the {@skill Perception} and {@skill Stealth} skills."
+          "You have proficiency in the Stealth skills."
         ],
         "type": "entries"
       },
@@ -9044,7 +9044,7 @@
       {
         "name": "Infernal Legacy",
         "entries": [
-          "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          "You know the Darkness spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
         ],
         "type": "entries"
       },
@@ -9170,7 +9170,7 @@
       {
         "name": "Infernal Legacy",
         "entries": [
-          "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          "You know the Darkness spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
         ],
         "type": "entries"
       },
@@ -9184,7 +9184,7 @@
       {
         "name": "Appearance",
         "entries": [
-          "Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose {@dice 1d4+1} of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
+          "Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose 1d4+1 of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
         ],
         "type": "entries"
       },
@@ -9192,7 +9192,7 @@
         "type": "entries",
         "name": "Devil's Tongue",
         "entries": [
-          "You know the {@spell vicious mockery} cantrip. When you reach 3rd level, you can cast the {@spell charm person} spell as a 2nd-level spell once with this trait. When you reach 5th level, you can cast the {@spell enthrall} spell once with this trait. You must finish a long rest to cast these spells once again with this trait. Charisma is your spellcasting ability for them. This trait replaces the Infernal Legacy trait."
+          "You know the Enthrall spell once with this trait. You must finish a long rest to cast these spells once again with this trait. Charisma is your spellcasting ability for them. This trait replaces the Infernal Legacy trait."
         ],
         "data": {
           "overwrite": "Infernal Legacy"
@@ -9313,7 +9313,7 @@
       {
         "name": "Infernal Legacy",
         "entries": [
-          "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          "You know the Darkness spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
         ],
         "type": "entries"
       },
@@ -9327,7 +9327,7 @@
       {
         "name": "Appearance",
         "entries": [
-          "Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose {@dice 1d4+1} of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
+          "Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose 1d4+1 of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
         ],
         "type": "entries"
       },
@@ -9335,7 +9335,7 @@
         "type": "entries",
         "name": "Hellfire",
         "entries": [
-          "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell burning hands} spell once per day as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the {@spell darkness} spell; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+          "You know the Darkness spell; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
         ],
         "data": {
           "overwrite": "Infernal Legacy"
@@ -9456,7 +9456,7 @@
       {
         "name": "Infernal Legacy",
         "entries": [
-          "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          "You know the Darkness spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
         ],
         "type": "entries"
       },
@@ -9470,7 +9470,7 @@
       {
         "name": "Appearance",
         "entries": [
-          "Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose {@dice 1d4+1} of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
+          "Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose 1d4+1 of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
         ],
         "type": "entries"
       }
@@ -9589,7 +9589,7 @@
       {
         "name": "Infernal Legacy",
         "entries": [
-          "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          "You know the Darkness spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
         ],
         "type": "entries"
       },
@@ -9603,7 +9603,7 @@
       {
         "name": "Appearance",
         "entries": [
-          "Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose {@dice 1d4+1} of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
+          "Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose 1d4+1 of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
         ],
         "type": "entries"
       },
@@ -9729,7 +9729,7 @@
       {
         "name": "Control Air and Water",
         "entries": [
-          "A child of the sea, you can call on the magic of elemental air and water. You can cast {@spell fog cloud} with this trait. Starting at 3rd level, you can cast {@spell gust of wind} with it, and starting at 5th level, you can also cast {@spell wall of water|xge} with it. Once you cast a spell with this trait, you can't cast that spell with it again until you finish a long rest. Charisma is your spellcasting ability for these spells."
+          "A child of the sea, you can call on the magic of elemental air and water. You can cast Water|xge with it. Once you cast a spell with this trait, you can't cast that spell with it again until you finish a long rest. Charisma is your spellcasting ability for these spells."
         ],
         "type": "entries"
       },
@@ -9801,21 +9801,21 @@
         "name": "Chameleon Skin",
         "type": "entries",
         "entries": [
-          "You have advantage on Dexterity ({@skill Stealth}) checks made to hide."
+          "You have advantage on Dexterity (Stealth) checks made to hide."
         ]
       },
       {
         "name": "Stench",
         "type": "entries",
         "entries": [
-          "Any creature other than a troglodyte that starts its turn within 5 ft. of you must succeed on a {@dc 12} Constitution saving throw or be {@condition poisoned} until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour."
+          "Any creature other than a troglodyte that starts its turn within 5 ft. of you must succeed on a Poisoned until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour."
         ]
       },
       {
         "name": "Sunlight Sensitivity",
         "type": "entries",
         "entries": [
-          "While in sunlight, you have disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+          "While in sunlight, you have disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
         ]
       },
       {
@@ -9930,7 +9930,7 @@
           {
             "type": "list",
             "items": [
-              "You have advantage on saving throws against being {@condition poisoned}, and you have resistance to poison damage.",
+              "You have advantage on saving throws against being Poisoned, and you have resistance to poison damage.",
               "You don't need to eat, drink, or breathe.",
               "You are immune to disease.",
               "You don't need to sleep, and magic can't put you to sleep."
@@ -9942,7 +9942,7 @@
         "type": "entries",
         "name": "Sentry's Rest",
         "entries": [
-          "When you take a long rest, you must spend at least six hours in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn't render you {@condition unconscious}, and you can see and hear as normal."
+          "When you take a long rest, you must spend at least six hours in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn't render you Unconscious, and you can see and hear as normal."
         ]
       },
       {
@@ -10074,7 +10074,7 @@
       {
         "name": "Innate Spellcasting",
         "entries": [
-          "You know the {@spell poison spray} cantrip. You can cast {@spell animal friendship} an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast {@spell suggestion} with this trait. Once you cast it, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells."
+          "You know the Suggestion with this trait. Once you cast it, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells."
         ],
         "type": "entries"
       },
@@ -10088,7 +10088,7 @@
       {
         "name": "Poison Immunity",
         "entries": [
-          "You are immune to poison damage and the {@condition poisoned} condition."
+          "You are immune to poison damage and the Poisoned condition."
         ],
         "type": "entries"
       },
@@ -10157,7 +10157,7 @@
         "type": "entries",
         "name": "Undead Nature",
         "entries": [
-          "You are immune to poison damage, and you can't be {@condition poisoned}. You don't require air, food, drink, or sleep."
+          "You are immune to poison damage, and you can't be Poisoned. You don't require air, food, drink, or sleep."
         ]
       },
       {
