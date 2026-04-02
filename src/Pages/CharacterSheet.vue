@@ -216,7 +216,7 @@ const toggleInspiration = () => {
                     <div class="flex flex-col items-center gap-1">
                         <p
                             class="text-3xl border-2 border-black p-3 rounded w-16 h-16 flex items-center justify-center text-center font-bold">
-                            {{ character.initiative >= 0 ? "+" : "-" }}{{ character.initiative }}
+                            {{ character.initiative >= 0 ? "+" : "" }}{{ character.initiative }}
                         </p>
                         <p class="text-sm font-bold">Initiative</p>
                     </div>

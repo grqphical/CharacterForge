@@ -286,17 +286,18 @@ applyRacialBonuses();
                     </div>
                 </div>
                 <h3 class="font-bold text-lg">Racial Bonuses:</h3>
-                <div class="flex flex-row gap-1">
+                <div class="flex flex-row gap-2 mb-3 items-center">
                     <div v-for="(value, stat) in filteredRacialBonuses" :key="stat">
                         <p v-if="stat !== 'choose'">{{ stat.toUpperCase() }}: {{ value }}</p>
-                        <div v-if="stat === 'choose'">
-                            <select class="bg-gray-200 p-1 rounded-md" @change="handleDynamicAbilityChange">
-                                <option value="">Select an ability</option>
-                                <option v-for="ability in value.from" :key="ability" :value="ability">
-                                    {{ ability.toUpperCase() }}
-                                </option>
-                            </select>
-                            
+                        <div v-if="stat === 'choose'" class="flex flex-row gap-2">
+                            <div v-for="i in value.count" :key="i">
+                                <select class="bg-gray-200 p-1 rounded-md" @change="handleDynamicAbilityChange" required="true">
+                                    <option value="">Select an ability</option>
+                                    <option v-for="ability in value.from" :key="ability" :value="ability">
+                                        {{ ability.toUpperCase() }}
+                                    </option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
