@@ -96,11 +96,11 @@ const toggleInspiration = () => {
 
     <div v-if="character !== undefined">
         <div class="w-full flex flex-row gap-3">
-            <div class=" min-w-90 bg-white rounded-md shadow-xl px-2 flex flex-row items-center gap-2">
+            <div class=" min-w-90 bg-white rounded-md shadow-xl p-2 flex flex-row items-center gap-2">
                 <a href="/"><img src="/logo.webp" alt="logo" width="64" height="64"></a>
                 <h2 class="font-bold text-3xl">{{ character?.name }}</h2>
             </div>
-            <div class="w-160 bg-white rounded-md shadow-xl px-2 grid grid-cols-3">
+            <div class="w-160 bg-white rounded-md shadow-xl p-2 grid grid-cols-3">
                 <div class="flex flex-col">
                     <h2 class="text-lg font-bold">{{ `Level ${character?.level} ${character?.class}` }}</h2>
                     <p class="text-xs">Class/Level</p>
