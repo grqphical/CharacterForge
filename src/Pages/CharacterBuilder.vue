@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, reactive } from 'vue' // Import reactive
-import { Class, type Character, Alignment } from "../models"
+import { ClassName, type Character, Alignment } from "../models"
 import races from "../Data/races.json"
 import { useCharacterStore } from "../storage"
 import { useRouter } from 'vue-router'
@@ -11,7 +11,7 @@ const charactersStore = useCharacterStore();
 const character = reactive<Character>({
     name: '',
     level: 1,
-    class: Class.Fighter,
+    class: ClassName.Fighter,
     race: races[0]?.name || '',
     alignment: Alignment.TrueNeutral,
     stats: {
@@ -214,7 +214,7 @@ applyRacialBonuses();
             <div class="flex flex-col gap-1">
                 <label for="class" class="text-xl">Class:</label>
                 <select v-model="character.class" class="bg-gray-200 p-1 rounded-md w-1/3" required>
-                    <option v-for="charClass in Object.keys(Class)" :value="charClass" :key="charClass">
+                    <option v-for="charClass in Object.keys(ClassName)" :value="charClass" :key="charClass">
                         {{ charClass }}
                     </option>
                 </select>

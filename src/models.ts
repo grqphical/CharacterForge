@@ -1,4 +1,4 @@
-export enum Class {
+export enum ClassName {
     Artificer = "Artificer",
     Barbarian = "Barbarian",
     Bard = "Bard",
@@ -66,7 +66,7 @@ interface Spell {
 }
 
 interface Spellcasting {
-    class: Class
+    class: ClassName
     spellcasting_ability: Ability
     save_dc: number
     spell_attack_bonus: number
@@ -77,7 +77,7 @@ interface Spellcasting {
 
 export interface Character {
     name: string
-    class: Class
+    class: ClassName
     subclass: string | null
     race: string
     background: string
