@@ -6,6 +6,7 @@ import backgrounds from "../../Data/backgrounds.json"
 import { useCharacterStore } from "../../storage"
 import { useRouter } from 'vue-router'
 import ClassSelector from './ClassSelector.vue'
+import RaceSelector from './RaceSelector.vue'
 
 const router = useRouter()
 const charactersStore = useCharacterStore();
@@ -133,16 +134,7 @@ applyRacialBonuses();
             </div>
 
             <ClassSelector :character="character" />
-
-            <div class="flex flex-col gap-1">
-                <label for="race" class="text-xl">Race:</label>
-                <select v-model="character.race" class="bg-gray-200 p-1 rounded-md w-1/3" required
-                    @change="applyRacialBonuses">
-                    <option v-for="race in races" :value="race.name" :key="race.name">
-                        {{ race.name }} ({{ race.source }})
-                    </option>
-                </select>
-            </div>
+            <RaceSelector :character="character" />
 
             <div class="flex flex-col gap-1">
                 <label for="level" class="text-xl">Level:</label>
