@@ -15,6 +15,10 @@ export interface Race {
         int?: number;
         wis?: number;
         cha?: number;
+        choose?: {
+            from: Array<String>,
+            count: number,
+        }
     }>;
     traitTags: string[];
     languageProficiencies: Array<{

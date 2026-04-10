@@ -90,37 +90,6 @@ const handleAbilityChange = (stat: string, e: Event) => {
     }
 }
 
-const applyRacialBonuses = () => {
-    Object.entries(character.stats).forEach(([keyName]) => {
-        const key = keyName as keyof typeof character.stats;
-        character.stats[key] = 0
-    })
-    const race = character.race;
-    const raceData = races.find((r) => r.name == race);
-    if (raceData?.ability) {
-        raceData.ability.forEach((value) => {
-            Object.entries(value).forEach(([statName, statValue]) => {
-                const stat = statName as keyof typeof character.stats
-                character.stats[stat] = statValue as number
-            })
-        });
-    }
-}
-
-const filteredRacialBonuses = computed(() => {
-    return Object.fromEntries(
-        Object.entries(character.stats).filter(([_, value]) => value !== 0)
-    );
-});
-
-const handleDynamicAbilityChange = (payload: Event) => {
-    const target = payload.target as HTMLSelectElement;
-    const selectedAbility = target.value as keyof typeof character.stats;
-    character.stats[selectedAbility] += (character.stats[selectedAbility] > 0 ? 0 : 1);
-}
-
-applyRacialBonuses();
-
 </script>
 
 <template>
@@ -196,25 +165,6 @@ applyRacialBonuses();
                         <input type="number" name="cha" id="cha" class="bg-gray-200 p-1 rounded-md w-full"
                             @input="handleAbilityChange('cha', $event)" :value="preBonusStats.cha" min="8" max="15">
                         <label for="cha">CHA</label>
-                    </div>
-                </div>
-                <h3 class="font-bold text-lg">Racial Bonuses:</h3>
-                <div class="flex flex-row gap-2 mb-3 items-center">
-                    <div v-for="(value, stat) in filteredRacialBonuses" :key="stat">
-                        <p v-if="stat !== 'choose'">{{ stat.toUpperCase() }}: {{ value }}</p>
-                        <div v-if="stat === 'choose'" class="flex flex-row gap-2">
-                            <!-- @vue-ignore -->
-                            <div v-for="i in value.count" :key="i">
-                                <select class="bg-gray-200 p-1 rounded-md" @change="handleDynamicAbilityChange"
-                                    required="true">
-                                    <option value="">Select an ability</option>
-                                    <!-- @vue-ignore -->
-                                    <option v-for="ability in value.from" :key="ability" :value="ability">
-                                        {{ ability.toUpperCase() }}
-                                    </option>
-                                </select>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
