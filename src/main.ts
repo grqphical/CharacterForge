@@ -4,8 +4,8 @@ import App from './App.vue'
 import Landing from "./Pages/Landing.vue"
 
 import { createWebHistory, createRouter } from 'vue-router'
-import CharacterBuilder from './Pages/CharacterBuilder.vue'
-import CharacterSheet from './Pages/CharacterSheet.vue'
+import CharacterBuilder from './Pages/CharacterBuilder/Index.vue'
+import CharacterSheet from './Pages/CharacterSheet/Index.vue'
 import { createPinia } from 'pinia'
 import { createHead } from '@unhead/vue/client'
 
